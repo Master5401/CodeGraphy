@@ -1,0 +1,360 @@
+{
+  "schema": "codegraphy-analysis/v1",
+  "provider": "atlas-engine",
+  "provider_version": "1.7.0",
+  "provider_commit": "0f8379ff61a6f5ea1ae888d331f21b8b44f6a5b7",
+  "profile": "java-structural",
+  "summary": {
+    "discovered_files": 1,
+    "indexed_files": 0,
+    "cached_files": 1,
+    "failed_files": 0,
+    "symbols": 5,
+    "edges": 2
+  },
+  "artifacts": [
+    {
+      "id": "artifact:9a3abd6754057bdf0b333cb4de728694a61fbea6c365aafabd178209bdfd9e10",
+      "path": "src/main/java/proof/PriceFlow.java",
+      "language": "java",
+      "content_hash": "d2af327da878221fa4bb2f27e32cb2c1bfb1f1b19944486b29118c81a80a7843",
+      "parse_status": "Success",
+      "evidence": {
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "provider_fact_id": "cc0b70ca..ce177957",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "line_start": null,
+        "line_end": null,
+        "resolution_state": "RESOLVED"
+      },
+      "raw_provider_fact": {
+        "content_hash": "d2af327da878221fa4bb2f27e32cb2c1bfb1f1b19944486b29118c81a80a7843",
+        "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+        "language": "java",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "status": "success"
+      }
+    }
+  ],
+  "symbols": [
+    {
+      "id": "symbol:83cf7d41c6e0aa15d8abd0c778ae0b64fff24d224abf77c326e0d1105577394d",
+      "kind": "class",
+      "language": "java",
+      "name": "PriceFlow",
+      "qualified_name": "PriceFlow",
+      "signature": null,
+      "provider_symbol_id": "53f584c4..22d695dd",
+      "evidence": {
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "provider_fact_id": "53f584c4..22d695dd",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "line_start": 3,
+        "line_end": 13,
+        "resolution_state": "RESOLVED"
+      },
+      "raw_provider_fact": {
+        "async_": false,
+        "exported": false,
+        "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+        "id": "53f584c476066ad0b460657ae74d8a095b3dbf1dfe42c78ae708b88822d695dd",
+        "kind": "class",
+        "language": "java",
+        "layer": "structural",
+        "name": "PriceFlow",
+        "name_range": {
+          "end_byte": 44,
+          "end_column": 28,
+          "end_line": 2,
+          "start_byte": 35,
+          "start_column": 19,
+          "start_line": 2
+        },
+        "qualified_name": "PriceFlow",
+        "range": {
+          "end_byte": 278,
+          "end_column": 1,
+          "end_line": 12,
+          "start_byte": 16,
+          "start_column": 0,
+          "start_line": 2
+        },
+        "scope_id": "342ec6465809fca86d2d5c0b9672ccbf6786e8d28a752ebb8a59b2a72848d888",
+        "static_": false,
+        "symbol_path": []
+      }
+    },
+    {
+      "id": "symbol:0f8e84e37aa23dc26683e7456cce5a28b13a164dbdddd880a13038b91d44d012",
+      "kind": "method",
+      "language": "java",
+      "name": "total",
+      "qualified_name": "PriceFlow.total",
+      "signature": "(int quantity, int unitPrice): int",
+      "provider_symbol_id": "1a3437ab..47a5c5b1",
+      "evidence": {
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "provider_fact_id": "1a3437ab..47a5c5b1",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "line_start": 4,
+        "line_end": 7,
+        "resolution_state": "RESOLVED"
+      },
+      "raw_provider_fact": {
+        "async_": false,
+        "container": "53f584c476066ad0b460657ae74d8a095b3dbf1dfe42c78ae708b88822d695dd",
+        "exported": false,
+        "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+        "id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+        "kind": "method",
+        "language": "java",
+        "layer": "structural",
+        "name": "total",
+        "name_range": {
+          "end_byte": 67,
+          "end_column": 20,
+          "end_line": 3,
+          "start_byte": 62,
+          "start_column": 15,
+          "start_line": 3
+        },
+        "qualified_name": "PriceFlow.total",
+        "range": {
+          "end_byte": 182,
+          "end_column": 5,
+          "end_line": 6,
+          "start_byte": 51,
+          "start_column": 4,
+          "start_line": 3
+        },
+        "scope_id": "93ad4e57ceb25b0052f26c88ea175c967455df1cd7a08730206e45e821ac9867",
+        "signature": "(int quantity, int unitPrice): int",
+        "static_": false,
+        "symbol_path": []
+      }
+    },
+    {
+      "id": "symbol:650a53dfb4ae72009c71b9c07006fd363a97064ea798a15c38c373d18298be13",
+      "kind": "variable",
+      "language": "java",
+      "name": "subtotal",
+      "qualified_name": "PriceFlow.subtotal",
+      "signature": null,
+      "provider_symbol_id": "e592e905..98d7cb26",
+      "evidence": {
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "provider_fact_id": "e592e905..98d7cb26",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "line_start": 5,
+        "line_end": 5,
+        "resolution_state": "RESOLVED"
+      },
+      "raw_provider_fact": {
+        "async_": false,
+        "exported": false,
+        "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+        "id": "e592e905db012a6b5d85e9c046774f0d14f887477061e402d5bb973598d7cb26",
+        "kind": "variable",
+        "language": "java",
+        "layer": "structural",
+        "name": "subtotal",
+        "name_range": {
+          "end_byte": 119,
+          "end_column": 20,
+          "end_line": 4,
+          "start_byte": 111,
+          "start_column": 12,
+          "start_line": 4
+        },
+        "qualified_name": "PriceFlow.subtotal",
+        "range": {
+          "end_byte": 119,
+          "end_column": 20,
+          "end_line": 4,
+          "start_byte": 111,
+          "start_column": 12,
+          "start_line": 4
+        },
+        "scope_id": "a985d391ade503557f9983637d450154192eed3a5684aecb05a7e829489a5bce",
+        "static_": false,
+        "symbol_path": []
+      }
+    },
+    {
+      "id": "symbol:0eab6d98f50ced00b7099273ada019b5cc4dfd8bf98fd5bf2c45e091093d493a",
+      "kind": "method",
+      "language": "java",
+      "name": "addFee",
+      "qualified_name": "PriceFlow.addFee",
+      "signature": "(int amount): int",
+      "provider_symbol_id": "f008604f..6d804a57",
+      "evidence": {
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "provider_fact_id": "f008604f..6d804a57",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "line_start": 9,
+        "line_end": 12,
+        "resolution_state": "RESOLVED"
+      },
+      "raw_provider_fact": {
+        "async_": false,
+        "container": "53f584c476066ad0b460657ae74d8a095b3dbf1dfe42c78ae708b88822d695dd",
+        "exported": false,
+        "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+        "id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+        "kind": "method",
+        "language": "java",
+        "layer": "structural",
+        "name": "addFee",
+        "name_range": {
+          "end_byte": 206,
+          "end_column": 22,
+          "end_line": 8,
+          "start_byte": 200,
+          "start_column": 16,
+          "start_line": 8
+        },
+        "qualified_name": "PriceFlow.addFee",
+        "range": {
+          "end_byte": 276,
+          "end_column": 5,
+          "end_line": 11,
+          "start_byte": 188,
+          "start_column": 4,
+          "start_line": 8
+        },
+        "scope_id": "11c057315f7dd99255cfb209946228cb52a2c6b1e092d364ee4013fc6d391760",
+        "signature": "(int amount): int",
+        "static_": false,
+        "symbol_path": []
+      }
+    },
+    {
+      "id": "symbol:5850ae0fdb8d161ea1b09ffc3943a2c6108e4a4ef20797a02e2b5eaa15f3efc9",
+      "kind": "variable",
+      "language": "java",
+      "name": "fee",
+      "qualified_name": "PriceFlow.fee",
+      "signature": null,
+      "provider_symbol_id": "a87409a3..798b7b57",
+      "evidence": {
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "provider_fact_id": "a87409a3..798b7b57",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "line_start": 10,
+        "line_end": 10,
+        "resolution_state": "RESOLVED"
+      },
+      "raw_provider_fact": {
+        "async_": false,
+        "exported": false,
+        "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+        "id": "a87409a32a723a4d31ec636ecf7584b4f71a5eb63d8067ee96b2cac6798b7b57",
+        "kind": "variable",
+        "language": "java",
+        "layer": "structural",
+        "name": "fee",
+        "name_range": {
+          "end_byte": 236,
+          "end_column": 15,
+          "end_line": 9,
+          "start_byte": 233,
+          "start_column": 12,
+          "start_line": 9
+        },
+        "qualified_name": "PriceFlow.fee",
+        "range": {
+          "end_byte": 236,
+          "end_column": 15,
+          "end_line": 9,
+          "start_byte": 233,
+          "start_column": 12,
+          "start_line": 9
+        },
+        "scope_id": "a7d04c660f90758b0aa0d629a68f97d2759b69d0e79f091c4a70876ec6ecd5cd",
+        "static_": false,
+        "symbol_path": []
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "relation:9e6614d67f80e166facc636355b38a521c4175a7c2350f93b64987c6713352bb",
+      "kind": "calls",
+      "source": "symbol:0f8e84e37aa23dc26683e7456cce5a28b13a164dbdddd880a13038b91d44d012",
+      "target": "symbol:0eab6d98f50ced00b7099273ada019b5cc4dfd8bf98fd5bf2c45e091093d493a",
+      "source_name": "PriceFlow.total",
+      "target_name": "PriceFlow.addFee",
+      "provider_edge_id": "7ba70184..7a49acd2",
+      "confidence": 1.0,
+      "resolution_state": "HEURISTIC",
+      "unresolved_reason": null,
+      "evidence": {
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "provider_fact_id": "308cda54..a950b7ae",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "line_start": 6,
+        "line_end": 6,
+        "resolution_state": "HEURISTIC"
+      },
+      "raw_provider_fact": {
+        "confidence": 1.0,
+        "id": "7ba70184f2e54198e41be14f490ce3c87902751302cbb626df4584777a49acd2",
+        "kind": "calls",
+        "location": {
+          "end_byte": 165,
+          "end_column": 21,
+          "end_line": 5,
+          "start_byte": 159,
+          "start_column": 15,
+          "start_line": 5
+        },
+        "provenance": "heuristic",
+        "ref_id": "308cda543b4b7402ceab3642c5023a8de0d7ad3f3aa05ca590ad7a84a950b7ae",
+        "resolved_by": "name_only",
+        "source": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+        "target": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57"
+      }
+    },
+    {
+      "id": "relation:f9b3a86141e38c4a78ec954d989225c0e94ad1c71ed817d111e338e2a9df3807",
+      "kind": "contains",
+      "source": "symbol:83cf7d41c6e0aa15d8abd0c778ae0b64fff24d224abf77c326e0d1105577394d",
+      "target": "symbol:0eab6d98f50ced00b7099273ada019b5cc4dfd8bf98fd5bf2c45e091093d493a",
+      "source_name": "PriceFlow",
+      "target_name": "PriceFlow.addFee",
+      "provider_edge_id": "cb7661f7..7b847aeb",
+      "confidence": 1.0,
+      "resolution_state": "HEURISTIC",
+      "unresolved_reason": null,
+      "evidence": {
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "provider_fact_id": "308cda54..a950b7ae",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "line_start": 6,
+        "line_end": 6,
+        "resolution_state": "HEURISTIC"
+      },
+      "raw_provider_fact": {
+        "confidence": 1.0,
+        "id": "cb7661f7bba32ab2ccfd82b665d4039ec4867aa42e2447af158ed39e7b847aeb",
+        "kind": "contains",
+        "provenance": "tree_sitter",
+        "ref_id": "308cda543b4b7402ceab3642c5023a8de0d7ad3f3aa05ca590ad7a84a950b7ae",
+        "resolved_by": "name_only",
+        "source": "53f584c476066ad0b460657ae74d8a095b3dbf1dfe42c78ae708b88822d695dd",
+        "target": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57"
+      }
+    }
+  ],
+  "unresolved_calls": [],
+  "diagnostics": []
+}

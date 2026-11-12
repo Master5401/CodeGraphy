@@ -1,0 +1,9 @@
+digraph codegraphy_calls {
+  rankdir=LR;
+  "symbol:83cf7d41c6e0aa15d8abd0c778ae0b64fff24d224abf77c326e0d1105577394d" [label="PriceFlow\\nsrc/main/java/proof/PriceFlow.java"];
+  "symbol:0f8e84e37aa23dc26683e7456cce5a28b13a164dbdddd880a13038b91d44d012" [label="PriceFlow.total\\nsrc/main/java/proof/PriceFlow.java"];
+  "symbol:650a53dfb4ae72009c71b9c07006fd363a97064ea798a15c38c373d18298be13" [label="PriceFlow.subtotal\\nsrc/main/java/proof/PriceFlow.java"];
+  "symbol:0eab6d98f50ced00b7099273ada019b5cc4dfd8bf98fd5bf2c45e091093d493a" [label="PriceFlow.addFee\\nsrc/main/java/proof/PriceFlow.java"];
+  "symbol:5850ae0fdb8d161ea1b09ffc3943a2c6108e4a4ef20797a02e2b5eaa15f3efc9" [label="PriceFlow.fee\\nsrc/main/java/proof/PriceFlow.java"];
+  "symbol:0f8e84e37aa23dc26683e7456cce5a28b13a164dbdddd880a13038b91d44d012" -> "symbol:0eab6d98f50ced00b7099273ada019b5cc4dfd8bf98fd5bf2c45e091093d493a" [label="calls [HEURISTIC]", style=dashed, tooltip="src/main/java/proof/PriceFlow.java:6 → PriceFlow.total → PriceFlow.addFee"];
+}

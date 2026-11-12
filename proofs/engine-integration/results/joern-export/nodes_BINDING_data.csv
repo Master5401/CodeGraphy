@@ -1,0 +1,15 @@
+21474836480,BINDING,proof.PriceFlow.<init>:void(),<init>,void()
+21474836481,BINDING,proof.PriceFlow.addFee:int(int),addFee,int(int)
+21474836482,BINDING,java.lang.Object.clone:java.lang.Object(),clone,java.lang.Object()
+21474836483,BINDING,java.lang.Object.equals:boolean(java.lang.Object),equals,boolean(java.lang.Object)
+21474836484,BINDING,java.lang.Object.finalize:void(),finalize,void()
+21474836485,BINDING,java.lang.Object.getClass:java.lang.Class(),getClass,java.lang.Class()
+21474836486,BINDING,java.lang.Object.hashCode:int(),hashCode,int()
+21474836487,BINDING,java.lang.Object.notifyAll:void(),notifyAll,void()
+21474836488,BINDING,java.lang.Object.notify:void(),notify,void()
+21474836489,BINDING,java.lang.Object.toString:java.lang.String(),toString,java.lang.String()
+21474836490,BINDING,"proof.PriceFlow.total:int(int,int)",total,"int(int,int)"
+21474836491,BINDING,java.lang.Object.wait0:void(long),wait0,void(long)
+21474836492,BINDING,java.lang.Object.wait:void(),wait,void()
+21474836493,BINDING,java.lang.Object.wait:void(long),wait,void(long)
+21474836494,BINDING,"java.lang.Object.wait:void(long,int)",wait,"void(long,int)"

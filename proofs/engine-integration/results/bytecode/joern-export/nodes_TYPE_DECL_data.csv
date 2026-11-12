@@ -1,0 +1,6 @@
+167503724544,TYPE_DECL,,proof,NAMESPACE_BLOCK,public final class PriceFlow extends java.lang.Object,,${JOERN_TEMP}\\proof\\PriceFlow.class,proof.PriceFlow,<empty>,java.lang.Object,false,,PriceFlow,,,1
+167503724545,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,ANY,<empty>,,true,,ANY,,,-1
+167503724546,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,byte,<empty>,,true,,byte,,,-1
+167503724547,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,int,<empty>,,true,,int,,,-1
+167503724548,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,java.lang.Object,<empty>,,true,,Object,,,-1
+167503724549,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,void,<empty>,,true,,void,,,-1

@@ -1,0 +1,17 @@
+LOAD CSV FROM 'file:/nodes_IDENTIFIER_data.csv' AS line
+CREATE (:IDENTIFIER {
+id: toInteger(line[0]),
+ARGUMENT_INDEX: toInteger(line[2]),
+ARGUMENT_LABEL: line[3],
+ARGUMENT_NAME: line[4],
+CODE: line[5],
+COLUMN_NUMBER: toInteger(line[6]),
+DYNAMIC_TYPE_HINT_FULL_NAME: split(line[7], ";"),
+LINE_NUMBER: toInteger(line[8]),
+NAME: line[9],
+OFFSET: line[10],
+OFFSET_END: line[11],
+ORDER: toInteger(line[12]),
+POSSIBLE_TYPES: split(line[13], ";"),
+TYPE_FULL_NAME: line[14]
+});

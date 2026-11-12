@@ -1,0 +1,6 @@
+107374182400,METHOD,<empty>,<empty>,"public int total(int quantity, int unitPrice)",16,5,src\\main\\java\\proof\\PriceFlow.java,"proof.PriceFlow.total:int(int,int)",(II)I,,false,4,7,total,,,1,"int(int,int)"
+107374182401,METHOD,<empty>,<empty>,private int addFee(int amount),17,5,src\\main\\java\\proof\\PriceFlow.java,proof.PriceFlow.addFee:int(int),(I)I,,false,9,12,addFee,,,2,int(int)
+107374182402,METHOD,<empty>,<empty>,<empty>,1,,src\\main\\java\\proof\\PriceFlow.java,proof.PriceFlow.<init>:void(),()V,,false,3,,<init>,,,3,void()
+107374182403,METHOD,<global>,NAMESPACE_BLOCK,<empty>,,,<empty>,<operator>.assignment,<empty>,,true,,,<operator>.assignment,,,0,
+107374182404,METHOD,<global>,NAMESPACE_BLOCK,<empty>,,,<empty>,<operator>.multiplication,<empty>,,true,,,<operator>.multiplication,,,0,
+107374182405,METHOD,<global>,NAMESPACE_BLOCK,<empty>,,,<empty>,<operator>.addition,<empty>,,true,,,<operator>.addition,,,0,

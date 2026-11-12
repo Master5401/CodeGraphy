@@ -1,0 +1,5 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent><groupId>audit.synthetic</groupId><artifactId>workspace</artifactId><version>1.0</version></parent>
+    <artifactId>service</artifactId>
+</project>

@@ -1,0 +1,26 @@
+#!/usr/bin/env sh
+set -eu
+
+repo_root=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ "$#" -eq 0 ]; then
+    set -- ui
+fi
+first_arg=${1-}
+if [ "$first_arg" != "init" ] && [ "$first_arg" != "scan" ]; then
+    needs_build=0
+    if [ ! -d "$repo_root/web/node_modules" ]; then
+        echo "Installing pinned CodeGraphy web dependencies..."
+        npm ci --prefix "$repo_root/web"
+        needs_build=1
+    fi
+    if [ ! -f "$repo_root/web/dist/index.html" ]; then
+        needs_build=1
+    elif find "$repo_root/web/src" "$repo_root/web/index.html" "$repo_root/web/package.json" "$repo_root/web/package-lock.json" "$repo_root/web/vite.config.ts" -type f -newer "$repo_root/web/dist/index.html" -print -quit | grep -q .; then
+        needs_build=1
+    fi
+    if [ "$needs_build" -eq 1 ]; then
+        npm --prefix "$repo_root/web" run build
+    fi
+fi
+
+cargo run --manifest-path "$repo_root/Cargo.toml" -p codewiki-cli -- "$@"

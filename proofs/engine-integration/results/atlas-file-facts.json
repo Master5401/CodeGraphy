@@ -1,0 +1,1417 @@
+{
+  "file": {
+    "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+    "path": "src/main/java/proof/PriceFlow.java",
+    "language": "java",
+    "content_hash": "d2af327da878221fa4bb2f27e32cb2c1bfb1f1b19944486b29118c81a80a7843",
+    "status": "success"
+  },
+  "symbols": [
+    {
+      "id": "53f584c476066ad0b460657ae74d8a095b3dbf1dfe42c78ae708b88822d695dd",
+      "kind": "class",
+      "name": "PriceFlow",
+      "qualified_name": "PriceFlow",
+      "symbol_path": [],
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "language": "java",
+      "range": {
+        "start_byte": 16,
+        "end_byte": 278,
+        "start_line": 2,
+        "start_column": 0,
+        "end_line": 12,
+        "end_column": 1
+      },
+      "name_range": {
+        "start_byte": 35,
+        "end_byte": 44,
+        "start_line": 2,
+        "start_column": 19,
+        "end_line": 2,
+        "end_column": 28
+      },
+      "exported": false,
+      "static_": false,
+      "async_": false,
+      "scope_id": "342ec6465809fca86d2d5c0b9672ccbf6786e8d28a752ebb8a59b2a72848d888",
+      "layer": "dataflow"
+    },
+    {
+      "id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "method",
+      "name": "total",
+      "qualified_name": "PriceFlow.total",
+      "symbol_path": [],
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "language": "java",
+      "range": {
+        "start_byte": 51,
+        "end_byte": 182,
+        "start_line": 3,
+        "start_column": 4,
+        "end_line": 6,
+        "end_column": 5
+      },
+      "name_range": {
+        "start_byte": 62,
+        "end_byte": 67,
+        "start_line": 3,
+        "start_column": 15,
+        "end_line": 3,
+        "end_column": 20
+      },
+      "signature": "(int quantity, int unitPrice): int",
+      "exported": false,
+      "static_": false,
+      "async_": false,
+      "container": "53f584c476066ad0b460657ae74d8a095b3dbf1dfe42c78ae708b88822d695dd",
+      "scope_id": "93ad4e57ceb25b0052f26c88ea175c967455df1cd7a08730206e45e821ac9867",
+      "layer": "dataflow"
+    },
+    {
+      "id": "e592e905db012a6b5d85e9c046774f0d14f887477061e402d5bb973598d7cb26",
+      "kind": "variable",
+      "name": "subtotal",
+      "qualified_name": "PriceFlow.subtotal",
+      "symbol_path": [],
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "language": "java",
+      "range": {
+        "start_byte": 111,
+        "end_byte": 119,
+        "start_line": 4,
+        "start_column": 12,
+        "end_line": 4,
+        "end_column": 20
+      },
+      "name_range": {
+        "start_byte": 111,
+        "end_byte": 119,
+        "start_line": 4,
+        "start_column": 12,
+        "end_line": 4,
+        "end_column": 20
+      },
+      "exported": false,
+      "static_": false,
+      "async_": false,
+      "scope_id": "a985d391ade503557f9983637d450154192eed3a5684aecb05a7e829489a5bce",
+      "layer": "dataflow"
+    },
+    {
+      "id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "method",
+      "name": "addFee",
+      "qualified_name": "PriceFlow.addFee",
+      "symbol_path": [],
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "language": "java",
+      "range": {
+        "start_byte": 188,
+        "end_byte": 276,
+        "start_line": 8,
+        "start_column": 4,
+        "end_line": 11,
+        "end_column": 5
+      },
+      "name_range": {
+        "start_byte": 200,
+        "end_byte": 206,
+        "start_line": 8,
+        "start_column": 16,
+        "end_line": 8,
+        "end_column": 22
+      },
+      "signature": "(int amount): int",
+      "exported": false,
+      "static_": false,
+      "async_": false,
+      "container": "53f584c476066ad0b460657ae74d8a095b3dbf1dfe42c78ae708b88822d695dd",
+      "scope_id": "11c057315f7dd99255cfb209946228cb52a2c6b1e092d364ee4013fc6d391760",
+      "layer": "dataflow"
+    },
+    {
+      "id": "a87409a32a723a4d31ec636ecf7584b4f71a5eb63d8067ee96b2cac6798b7b57",
+      "kind": "variable",
+      "name": "fee",
+      "qualified_name": "PriceFlow.fee",
+      "symbol_path": [],
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "language": "java",
+      "range": {
+        "start_byte": 233,
+        "end_byte": 236,
+        "start_line": 9,
+        "start_column": 12,
+        "end_line": 9,
+        "end_column": 15
+      },
+      "name_range": {
+        "start_byte": 233,
+        "end_byte": 236,
+        "start_line": 9,
+        "start_column": 12,
+        "end_line": 9,
+        "end_column": 15
+      },
+      "exported": false,
+      "static_": false,
+      "async_": false,
+      "scope_id": "a7d04c660f90758b0aa0d629a68f97d2759b69d0e79f091c4a70876ec6ecd5cd",
+      "layer": "dataflow"
+    }
+  ],
+  "scopes": [
+    {
+      "id": "f704e26f2829a66dea19a2cdbaa0deeef693333337fdcbb156e15da1d53c7a33",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "kind": "file",
+      "name": "File#0",
+      "scope_path": "File#0",
+      "range": {
+        "start_byte": 0,
+        "end_byte": 279,
+        "start_line": 0,
+        "start_column": 0,
+        "end_line": 13,
+        "end_column": 0
+      }
+    },
+    {
+      "id": "342ec6465809fca86d2d5c0b9672ccbf6786e8d28a752ebb8a59b2a72848d888",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "kind": "class",
+      "name": "Class#16",
+      "scope_path": "Class#16",
+      "range": {
+        "start_byte": 16,
+        "end_byte": 278,
+        "start_line": 2,
+        "start_column": 0,
+        "end_line": 12,
+        "end_column": 1
+      },
+      "parent_id": "f704e26f2829a66dea19a2cdbaa0deeef693333337fdcbb156e15da1d53c7a33"
+    },
+    {
+      "id": "93ad4e57ceb25b0052f26c88ea175c967455df1cd7a08730206e45e821ac9867",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "kind": "method",
+      "name": "Method#51",
+      "scope_path": "Method#51",
+      "range": {
+        "start_byte": 51,
+        "end_byte": 182,
+        "start_line": 3,
+        "start_column": 4,
+        "end_line": 6,
+        "end_column": 5
+      },
+      "parent_id": "342ec6465809fca86d2d5c0b9672ccbf6786e8d28a752ebb8a59b2a72848d888"
+    },
+    {
+      "id": "a985d391ade503557f9983637d450154192eed3a5684aecb05a7e829489a5bce",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "kind": "block",
+      "name": "Block#97",
+      "scope_path": "Block#97",
+      "range": {
+        "start_byte": 97,
+        "end_byte": 182,
+        "start_line": 3,
+        "start_column": 50,
+        "end_line": 6,
+        "end_column": 5
+      },
+      "parent_id": "93ad4e57ceb25b0052f26c88ea175c967455df1cd7a08730206e45e821ac9867"
+    },
+    {
+      "id": "11c057315f7dd99255cfb209946228cb52a2c6b1e092d364ee4013fc6d391760",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "kind": "method",
+      "name": "Method#188",
+      "scope_path": "Method#188",
+      "range": {
+        "start_byte": 188,
+        "end_byte": 276,
+        "start_line": 8,
+        "start_column": 4,
+        "end_line": 11,
+        "end_column": 5
+      },
+      "parent_id": "342ec6465809fca86d2d5c0b9672ccbf6786e8d28a752ebb8a59b2a72848d888"
+    },
+    {
+      "id": "a7d04c660f90758b0aa0d629a68f97d2759b69d0e79f091c4a70876ec6ecd5cd",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "kind": "block",
+      "name": "Block#219",
+      "scope_path": "Block#219",
+      "range": {
+        "start_byte": 219,
+        "end_byte": 276,
+        "start_line": 8,
+        "start_column": 35,
+        "end_line": 11,
+        "end_column": 5
+      },
+      "parent_id": "11c057315f7dd99255cfb209946228cb52a2c6b1e092d364ee4013fc6d391760"
+    }
+  ],
+  "references": [
+    {
+      "id": "308cda543b4b7402ceab3642c5023a8de0d7ad3f3aa05ca590ad7a84a950b7ae",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "source_symbol": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "scope_id": "a985d391ade503557f9983637d450154192eed3a5684aecb05a7e829489a5bce",
+      "kind": "call",
+      "text": "addFee",
+      "name": "addFee",
+      "range": {
+        "start_byte": 159,
+        "end_byte": 165,
+        "start_line": 5,
+        "start_column": 15,
+        "end_line": 5,
+        "end_column": 21
+      }
+    }
+  ],
+  "callsites": [
+    {
+      "id": "47f725382142de802fa00a1ff8650e2679517582fbdd92fec51d5c2d207a54cd",
+      "reference_id": "308cda543b4b7402ceab3642c5023a8de0d7ad3f3aa05ca590ad7a84a950b7ae",
+      "caller": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "receiver": "addFee",
+      "args": [
+        {
+          "index": 0,
+          "value": "subtotal",
+          "range": {
+            "start_byte": 166,
+            "end_byte": 174,
+            "start_line": 5,
+            "start_column": 22,
+            "end_line": 5,
+            "end_column": 30
+          },
+          "data_node_id": "627f170838597e91a56b03e9ce3429a8a793947444a33e3ae408e8cb68f926c5"
+        }
+      ],
+      "range": {
+        "start_byte": 159,
+        "end_byte": 175,
+        "start_line": 5,
+        "start_column": 15,
+        "end_line": 5,
+        "end_column": 31
+      },
+      "callee_range": {
+        "start_byte": 159,
+        "end_byte": 165,
+        "start_line": 5,
+        "start_column": 15,
+        "end_line": 5,
+        "end_column": 21
+      }
+    }
+  ],
+  "bindings": [
+    {
+      "id": "6c900f1040bba4c29e6ad45bcde67a257494c8a8455fcf5d5eea9b6c52f7595a",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "scope_id": "93ad4e57ceb25b0052f26c88ea175c967455df1cd7a08730206e45e821ac9867",
+      "kind": "parameter",
+      "name": "quantity",
+      "visible_from_byte": 72,
+      "range": {
+        "start_byte": 72,
+        "end_byte": 80,
+        "start_line": 3,
+        "start_column": 25,
+        "end_line": 3,
+        "end_column": 33
+      }
+    },
+    {
+      "id": "6ce5c8e6674cae99f56ec9c320933b3f0cd8f1592ef38d5ad4c801ec7b45e1fc",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "scope_id": "93ad4e57ceb25b0052f26c88ea175c967455df1cd7a08730206e45e821ac9867",
+      "kind": "parameter",
+      "name": "unitPrice",
+      "visible_from_byte": 86,
+      "range": {
+        "start_byte": 86,
+        "end_byte": 95,
+        "start_line": 3,
+        "start_column": 39,
+        "end_line": 3,
+        "end_column": 48
+      }
+    },
+    {
+      "id": "d2c58d6c67ec849a5d39235e3dea8e36f5799aec2d4b945bf8f391d55eb09a00",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "scope_id": "a985d391ade503557f9983637d450154192eed3a5684aecb05a7e829489a5bce",
+      "kind": "local",
+      "name": "subtotal",
+      "visible_from_byte": 111,
+      "range": {
+        "start_byte": 111,
+        "end_byte": 119,
+        "start_line": 4,
+        "start_column": 12,
+        "end_line": 4,
+        "end_column": 20
+      }
+    },
+    {
+      "id": "86e6a5164ccd6707c6cb9ec9d0d8231f06c48c517e2d911fbc582b6adf602fde",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "scope_id": "11c057315f7dd99255cfb209946228cb52a2c6b1e092d364ee4013fc6d391760",
+      "kind": "parameter",
+      "name": "amount",
+      "visible_from_byte": 211,
+      "range": {
+        "start_byte": 211,
+        "end_byte": 217,
+        "start_line": 8,
+        "start_column": 27,
+        "end_line": 8,
+        "end_column": 33
+      }
+    },
+    {
+      "id": "9843c78208b3f716203b4d2a9b62d67bbd6f36a73eb6026bbb32cf5414e26d83",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "scope_id": "a7d04c660f90758b0aa0d629a68f97d2759b69d0e79f091c4a70876ec6ecd5cd",
+      "kind": "local",
+      "name": "fee",
+      "visible_from_byte": 233,
+      "range": {
+        "start_byte": 233,
+        "end_byte": 236,
+        "start_line": 9,
+        "start_column": 12,
+        "end_line": 9,
+        "end_column": 15
+      }
+    }
+  ],
+  "binding_uses": [
+    {
+      "id": "e5a65c899f252c110f7e40846f1d2e1cc860f3e04a0a9539dbaaa482b3d87ddc",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "93ad4e57ceb25b0052f26c88ea175c967455df1cd7a08730206e45e821ac9867",
+      "binding_id": "6c900f1040bba4c29e6ad45bcde67a257494c8a8455fcf5d5eea9b6c52f7595a",
+      "name": "quantity",
+      "range": {
+        "start_byte": 72,
+        "end_byte": 80,
+        "start_line": 3,
+        "start_column": 25,
+        "end_line": 3,
+        "end_column": 33
+      }
+    },
+    {
+      "id": "b713483803c0d8a21ec6951ab1f43b04346be877818e25ed498e4dd03b93c363",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "93ad4e57ceb25b0052f26c88ea175c967455df1cd7a08730206e45e821ac9867",
+      "binding_id": "6ce5c8e6674cae99f56ec9c320933b3f0cd8f1592ef38d5ad4c801ec7b45e1fc",
+      "name": "unitPrice",
+      "range": {
+        "start_byte": 86,
+        "end_byte": 95,
+        "start_line": 3,
+        "start_column": 39,
+        "end_line": 3,
+        "end_column": 48
+      }
+    },
+    {
+      "id": "d7125926fa550870fbc587d23d2fc998b1447c12810fe357cec349750d58bb26",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "a985d391ade503557f9983637d450154192eed3a5684aecb05a7e829489a5bce",
+      "binding_id": "d2c58d6c67ec849a5d39235e3dea8e36f5799aec2d4b945bf8f391d55eb09a00",
+      "name": "subtotal",
+      "range": {
+        "start_byte": 111,
+        "end_byte": 119,
+        "start_line": 4,
+        "start_column": 12,
+        "end_line": 4,
+        "end_column": 20
+      }
+    },
+    {
+      "id": "6418be88fc9b146a4299868d2addc8788fe3d009320c575181b513a716e28cca",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "11c057315f7dd99255cfb209946228cb52a2c6b1e092d364ee4013fc6d391760",
+      "binding_id": "86e6a5164ccd6707c6cb9ec9d0d8231f06c48c517e2d911fbc582b6adf602fde",
+      "name": "amount",
+      "range": {
+        "start_byte": 211,
+        "end_byte": 217,
+        "start_line": 8,
+        "start_column": 27,
+        "end_line": 8,
+        "end_column": 33
+      }
+    },
+    {
+      "id": "fc3ef8477ea14c9411863f2aaf9514a106ca95df7767e1420633319c6287b0c8",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "a7d04c660f90758b0aa0d629a68f97d2759b69d0e79f091c4a70876ec6ecd5cd",
+      "binding_id": "9843c78208b3f716203b4d2a9b62d67bbd6f36a73eb6026bbb32cf5414e26d83",
+      "name": "fee",
+      "range": {
+        "start_byte": 233,
+        "end_byte": 236,
+        "start_line": 9,
+        "start_column": 12,
+        "end_line": 9,
+        "end_column": 15
+      }
+    },
+    {
+      "id": "63495610d3dacd7a737caf5b1932bed747112eacc98bfbfb7318580d37bdbe8c",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "f704e26f2829a66dea19a2cdbaa0deeef693333337fdcbb156e15da1d53c7a33",
+      "name": "proof",
+      "range": {
+        "start_byte": 8,
+        "end_byte": 13,
+        "start_line": 0,
+        "start_column": 8,
+        "end_line": 0,
+        "end_column": 13
+      }
+    },
+    {
+      "id": "536dadd45bd2c3bc1b9e9875843631eb839ad0ff8f79ed2ff0634e45910971de",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "342ec6465809fca86d2d5c0b9672ccbf6786e8d28a752ebb8a59b2a72848d888",
+      "name": "PriceFlow",
+      "range": {
+        "start_byte": 35,
+        "end_byte": 44,
+        "start_line": 2,
+        "start_column": 19,
+        "end_line": 2,
+        "end_column": 28
+      }
+    },
+    {
+      "id": "57c7917b8fb09d2ac216a4c0259ed3991c2be1f98ac7a6c98e2bb3e47949e5c5",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "93ad4e57ceb25b0052f26c88ea175c967455df1cd7a08730206e45e821ac9867",
+      "name": "total",
+      "range": {
+        "start_byte": 62,
+        "end_byte": 67,
+        "start_line": 3,
+        "start_column": 15,
+        "end_line": 3,
+        "end_column": 20
+      }
+    },
+    {
+      "id": "dc7d547b262b5ba3318d68708976bdc8cf041ffa91a4beeee7c274058a40f51f",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "a985d391ade503557f9983637d450154192eed3a5684aecb05a7e829489a5bce",
+      "binding_id": "6c900f1040bba4c29e6ad45bcde67a257494c8a8455fcf5d5eea9b6c52f7595a",
+      "name": "quantity",
+      "range": {
+        "start_byte": 122,
+        "end_byte": 130,
+        "start_line": 4,
+        "start_column": 23,
+        "end_line": 4,
+        "end_column": 31
+      }
+    },
+    {
+      "id": "01e25c2e242d7c7b7ac6cc7ee96ed5602c79424d3bd32015a6fd1f89580c4752",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "a985d391ade503557f9983637d450154192eed3a5684aecb05a7e829489a5bce",
+      "binding_id": "6ce5c8e6674cae99f56ec9c320933b3f0cd8f1592ef38d5ad4c801ec7b45e1fc",
+      "name": "unitPrice",
+      "range": {
+        "start_byte": 133,
+        "end_byte": 142,
+        "start_line": 4,
+        "start_column": 34,
+        "end_line": 4,
+        "end_column": 43
+      }
+    },
+    {
+      "id": "54a76f4e5de3ffd686f56af2a243a8f020355e3cdf72998a9e1f77d44922831b",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "a985d391ade503557f9983637d450154192eed3a5684aecb05a7e829489a5bce",
+      "name": "addFee",
+      "range": {
+        "start_byte": 159,
+        "end_byte": 165,
+        "start_line": 5,
+        "start_column": 15,
+        "end_line": 5,
+        "end_column": 21
+      }
+    },
+    {
+      "id": "73fd12f26f898e1e8f41129f947782d2c71ed6ed47a1be5250a67df1b767a562",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "a985d391ade503557f9983637d450154192eed3a5684aecb05a7e829489a5bce",
+      "binding_id": "d2c58d6c67ec849a5d39235e3dea8e36f5799aec2d4b945bf8f391d55eb09a00",
+      "name": "subtotal",
+      "range": {
+        "start_byte": 166,
+        "end_byte": 174,
+        "start_line": 5,
+        "start_column": 22,
+        "end_line": 5,
+        "end_column": 30
+      }
+    },
+    {
+      "id": "813942c8a7797e1714920b98f5b02eadaa4e41991332ec3719fe31279581e88c",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "11c057315f7dd99255cfb209946228cb52a2c6b1e092d364ee4013fc6d391760",
+      "name": "addFee",
+      "range": {
+        "start_byte": 200,
+        "end_byte": 206,
+        "start_line": 8,
+        "start_column": 16,
+        "end_line": 8,
+        "end_column": 22
+      }
+    },
+    {
+      "id": "753f88d0ce388acc1f2ddaf5e8e1ae668e9cbae0e8e5dba0f8e0bed79c602657",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "a7d04c660f90758b0aa0d629a68f97d2759b69d0e79f091c4a70876ec6ecd5cd",
+      "binding_id": "86e6a5164ccd6707c6cb9ec9d0d8231f06c48c517e2d911fbc582b6adf602fde",
+      "name": "amount",
+      "range": {
+        "start_byte": 257,
+        "end_byte": 263,
+        "start_line": 10,
+        "start_column": 15,
+        "end_line": 10,
+        "end_column": 21
+      }
+    },
+    {
+      "id": "84d21fa13abb672fd7182bb1f1d78ccb454cd2459f36e128d7efeb7ed5884ffb",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "scope_id": "a7d04c660f90758b0aa0d629a68f97d2759b69d0e79f091c4a70876ec6ecd5cd",
+      "binding_id": "9843c78208b3f716203b4d2a9b62d67bbd6f36a73eb6026bbb32cf5414e26d83",
+      "name": "fee",
+      "range": {
+        "start_byte": 266,
+        "end_byte": 269,
+        "start_line": 10,
+        "start_column": 24,
+        "end_line": 10,
+        "end_column": 27
+      }
+    }
+  ],
+  "data_nodes": [
+    {
+      "id": "5fa6d693035ca3a3a8079883cf55a9ad5a794e58af2a824002302b1a92fc3cab",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "kind": "variable_use",
+      "name": "proof",
+      "access_path": "proof",
+      "range": {
+        "start_byte": 8,
+        "end_byte": 13,
+        "start_line": 0,
+        "start_column": 8,
+        "end_line": 0,
+        "end_column": 13
+      }
+    },
+    {
+      "id": "7d21f437cc6790b5c637cf43596021640d72c383779e9abf873c30737fa8a210",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "parameter",
+      "binding_id": "6c900f1040bba4c29e6ad45bcde67a257494c8a8455fcf5d5eea9b6c52f7595a",
+      "name": "quantity",
+      "access_path": "quantity",
+      "range": {
+        "start_byte": 72,
+        "end_byte": 80,
+        "start_line": 3,
+        "start_column": 25,
+        "end_line": 3,
+        "end_column": 33
+      }
+    },
+    {
+      "id": "8087c8ffafbfa5d04c02f143adb1aacfbdeb14588c5628b3e997d07bbb40c1cb",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "parameter",
+      "binding_id": "6ce5c8e6674cae99f56ec9c320933b3f0cd8f1592ef38d5ad4c801ec7b45e1fc",
+      "name": "unitPrice",
+      "access_path": "unitPrice",
+      "range": {
+        "start_byte": 86,
+        "end_byte": 95,
+        "start_line": 3,
+        "start_column": 39,
+        "end_line": 3,
+        "end_column": 48
+      }
+    },
+    {
+      "id": "31ce39d78f3b9a3ac1623b39e3861da21427126c9b6ab6e9db8208963a3008cd",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "local",
+      "binding_id": "d2c58d6c67ec849a5d39235e3dea8e36f5799aec2d4b945bf8f391d55eb09a00",
+      "name": "subtotal",
+      "access_path": "subtotal",
+      "range": {
+        "start_byte": 111,
+        "end_byte": 119,
+        "start_line": 4,
+        "start_column": 12,
+        "end_line": 4,
+        "end_column": 20
+      }
+    },
+    {
+      "id": "ca1b269312c01914f7532527c0dffd48314808e85c9f5e0bc939ae9872475d8c",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "expr",
+      "name": "quantity * unitPrice",
+      "range": {
+        "start_byte": 122,
+        "end_byte": 142,
+        "start_line": 4,
+        "start_column": 23,
+        "end_line": 4,
+        "end_column": 43
+      }
+    },
+    {
+      "id": "510ba06ba544d37f58415a84ae9ff9493abc43338af47680f2686fcd81563cd4",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "variable_use",
+      "binding_id": "6c900f1040bba4c29e6ad45bcde67a257494c8a8455fcf5d5eea9b6c52f7595a",
+      "name": "quantity",
+      "access_path": "quantity",
+      "range": {
+        "start_byte": 122,
+        "end_byte": 130,
+        "start_line": 4,
+        "start_column": 23,
+        "end_line": 4,
+        "end_column": 31
+      }
+    },
+    {
+      "id": "2a2d8526bf922642567003979b284075cc7aaccbe62e6996402220aaf6c7ed3f",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "variable_use",
+      "binding_id": "6ce5c8e6674cae99f56ec9c320933b3f0cd8f1592ef38d5ad4c801ec7b45e1fc",
+      "name": "unitPrice",
+      "access_path": "unitPrice",
+      "range": {
+        "start_byte": 133,
+        "end_byte": 142,
+        "start_line": 4,
+        "start_column": 34,
+        "end_line": 4,
+        "end_column": 43
+      }
+    },
+    {
+      "id": "e1f62db0fa16a917745879402c08e3858d87b098a8f46b1cacc521212f186ab5",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "return",
+      "name": "addFee(subtotal)",
+      "range": {
+        "start_byte": 159,
+        "end_byte": 175,
+        "start_line": 5,
+        "start_column": 15,
+        "end_line": 5,
+        "end_column": 31
+      }
+    },
+    {
+      "id": "0259fd604d123c2119cc2fb608198699fa53ece53414a1fed53ace42cf4c71a5",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "call_target",
+      "callsite_id": "47f725382142de802fa00a1ff8650e2679517582fbdd92fec51d5c2d207a54cd",
+      "name": "addFee",
+      "access_path": "addFee",
+      "range": {
+        "start_byte": 159,
+        "end_byte": 165,
+        "start_line": 5,
+        "start_column": 15,
+        "end_line": 5,
+        "end_column": 21
+      }
+    },
+    {
+      "id": "627f170838597e91a56b03e9ce3429a8a793947444a33e3ae408e8cb68f926c5",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "call_arg",
+      "binding_id": "d2c58d6c67ec849a5d39235e3dea8e36f5799aec2d4b945bf8f391d55eb09a00",
+      "callsite_id": "47f725382142de802fa00a1ff8650e2679517582fbdd92fec51d5c2d207a54cd",
+      "name": "subtotal",
+      "access_path": "subtotal",
+      "arg_index": 0,
+      "range": {
+        "start_byte": 166,
+        "end_byte": 174,
+        "start_line": 5,
+        "start_column": 22,
+        "end_line": 5,
+        "end_column": 30
+      }
+    },
+    {
+      "id": "465610ce3da17e5917b357768c11bd0598b739ac1f318892efee5ca2b92dad10",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "variable_use",
+      "binding_id": "d2c58d6c67ec849a5d39235e3dea8e36f5799aec2d4b945bf8f391d55eb09a00",
+      "name": "subtotal",
+      "access_path": "subtotal",
+      "range": {
+        "start_byte": 166,
+        "end_byte": 174,
+        "start_line": 5,
+        "start_column": 22,
+        "end_line": 5,
+        "end_column": 30
+      }
+    },
+    {
+      "id": "5eea5f18e945c4dbf7108f725025b253df65e948a138f56e673b05f621110ff1",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "parameter",
+      "binding_id": "86e6a5164ccd6707c6cb9ec9d0d8231f06c48c517e2d911fbc582b6adf602fde",
+      "name": "amount",
+      "access_path": "amount",
+      "range": {
+        "start_byte": 211,
+        "end_byte": 217,
+        "start_line": 8,
+        "start_column": 27,
+        "end_line": 8,
+        "end_column": 33
+      }
+    },
+    {
+      "id": "8b5880c1fec583fe012eb8e0dbdc27e532c42a7b596514c36dc6aa66ee3ff001",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "local",
+      "binding_id": "9843c78208b3f716203b4d2a9b62d67bbd6f36a73eb6026bbb32cf5414e26d83",
+      "name": "fee",
+      "access_path": "fee",
+      "range": {
+        "start_byte": 233,
+        "end_byte": 236,
+        "start_line": 9,
+        "start_column": 12,
+        "end_line": 9,
+        "end_column": 15
+      }
+    },
+    {
+      "id": "cbd4028f56aff0f1c880d3a136727e47c86df773a86f65a49fa58d7947f3090f",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "expr",
+      "name": "2",
+      "range": {
+        "start_byte": 239,
+        "end_byte": 240,
+        "start_line": 9,
+        "start_column": 18,
+        "end_line": 9,
+        "end_column": 19
+      }
+    },
+    {
+      "id": "2c690a703d9dea121768ee4d4cf6ac6de928d147be402a35cd022f6bd5659e7b",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "literal",
+      "name": "2",
+      "range": {
+        "start_byte": 239,
+        "end_byte": 240,
+        "start_line": 9,
+        "start_column": 18,
+        "end_line": 9,
+        "end_column": 19
+      }
+    },
+    {
+      "id": "26a901bbc58ba9b7a3e34c8c73d8da308101257e8281198e2fc5d86237a50768",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "return",
+      "name": "amount + fee",
+      "range": {
+        "start_byte": 257,
+        "end_byte": 269,
+        "start_line": 10,
+        "start_column": 15,
+        "end_line": 10,
+        "end_column": 27
+      }
+    },
+    {
+      "id": "3d4a8c472bd8779f12ab34cb9e3031ecdf9062164490546c0b189c41e3d6e9c9",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "variable_use",
+      "binding_id": "86e6a5164ccd6707c6cb9ec9d0d8231f06c48c517e2d911fbc582b6adf602fde",
+      "name": "amount",
+      "access_path": "amount",
+      "range": {
+        "start_byte": 257,
+        "end_byte": 263,
+        "start_line": 10,
+        "start_column": 15,
+        "end_line": 10,
+        "end_column": 21
+      }
+    },
+    {
+      "id": "e337751e3a6951ce8150bc30f0c598d5bf632c5b686d68b89ebbfb92fdcf1d79",
+      "file_id": "cc0b70caa88b2dcfc840b7d3fb6da901c4233d8ed02a39cafef5f38ece177957",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "variable_use",
+      "binding_id": "9843c78208b3f716203b4d2a9b62d67bbd6f36a73eb6026bbb32cf5414e26d83",
+      "name": "fee",
+      "access_path": "fee",
+      "range": {
+        "start_byte": 266,
+        "end_byte": 269,
+        "start_line": 10,
+        "start_column": 24,
+        "end_line": 10,
+        "end_column": 27
+      }
+    }
+  ],
+  "dataflow_edges": [
+    {
+      "id": "46b23c3efc3b08347084c6862c2d3b1c76b4baf769a6121b102cb25233c29c4d",
+      "source": "ca1b269312c01914f7532527c0dffd48314808e85c9f5e0bc939ae9872475d8c",
+      "target": "31ce39d78f3b9a3ac1623b39e3861da21427126c9b6ab6e9db8208963a3008cd",
+      "kind": "assign",
+      "location": {
+        "start_byte": 111,
+        "end_byte": 119,
+        "start_line": 4,
+        "start_column": 12,
+        "end_line": 4,
+        "end_column": 20
+      },
+      "confidence": 0.95
+    },
+    {
+      "id": "2a877c23b719f3380b0c25597deaca43d2f2339e73fba8277498dbf92933095e",
+      "source": "cbd4028f56aff0f1c880d3a136727e47c86df773a86f65a49fa58d7947f3090f",
+      "target": "8b5880c1fec583fe012eb8e0dbdc27e532c42a7b596514c36dc6aa66ee3ff001",
+      "kind": "assign",
+      "location": {
+        "start_byte": 233,
+        "end_byte": 236,
+        "start_line": 9,
+        "start_column": 12,
+        "end_line": 9,
+        "end_column": 15
+      },
+      "confidence": 0.95
+    },
+    {
+      "id": "bacefe1c652af19a313c5027749fc0f9266672a2c86a036d22281c4a3ad5b230",
+      "source": "627f170838597e91a56b03e9ce3429a8a793947444a33e3ae408e8cb68f926c5",
+      "target": "0259fd604d123c2119cc2fb608198699fa53ece53414a1fed53ace42cf4c71a5",
+      "kind": "arg_to_call",
+      "location": {
+        "start_byte": 166,
+        "end_byte": 174,
+        "start_line": 5,
+        "start_column": 22,
+        "end_line": 5,
+        "end_column": 30
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "ebc40ad49d1bda0605001abfc825b7d640a2c391d8c1e3b00be282d598cc9d7d",
+      "source": "510ba06ba544d37f58415a84ae9ff9493abc43338af47680f2686fcd81563cd4",
+      "target": "ca1b269312c01914f7532527c0dffd48314808e85c9f5e0bc939ae9872475d8c",
+      "kind": "read",
+      "location": {
+        "start_byte": 122,
+        "end_byte": 142,
+        "start_line": 4,
+        "start_column": 23,
+        "end_line": 4,
+        "end_column": 43
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "78cc369e65b288b41af43cfd0cea191f95168b0f26fedec9fa68238acf554ed3",
+      "source": "2a2d8526bf922642567003979b284075cc7aaccbe62e6996402220aaf6c7ed3f",
+      "target": "ca1b269312c01914f7532527c0dffd48314808e85c9f5e0bc939ae9872475d8c",
+      "kind": "read",
+      "location": {
+        "start_byte": 122,
+        "end_byte": 142,
+        "start_line": 4,
+        "start_column": 23,
+        "end_line": 4,
+        "end_column": 43
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "2f2146ded2eaea59cb5ba1cb5047c10f0a86ea9762016208a136724a58d809a7",
+      "source": "0259fd604d123c2119cc2fb608198699fa53ece53414a1fed53ace42cf4c71a5",
+      "target": "e1f62db0fa16a917745879402c08e3858d87b098a8f46b1cacc521212f186ab5",
+      "kind": "read",
+      "location": {
+        "start_byte": 159,
+        "end_byte": 175,
+        "start_line": 5,
+        "start_column": 15,
+        "end_line": 5,
+        "end_column": 31
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "e16f1e6b14d168c7ba60541993eb56d67d07b3280868c8885136497999fb5dea",
+      "source": "465610ce3da17e5917b357768c11bd0598b739ac1f318892efee5ca2b92dad10",
+      "target": "e1f62db0fa16a917745879402c08e3858d87b098a8f46b1cacc521212f186ab5",
+      "kind": "read",
+      "location": {
+        "start_byte": 159,
+        "end_byte": 175,
+        "start_line": 5,
+        "start_column": 15,
+        "end_line": 5,
+        "end_column": 31
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "c167bdd29454cf896f4c5c839f0dc41c3fc6587d5e25f7f20d602c07d5156c69",
+      "source": "2c690a703d9dea121768ee4d4cf6ac6de928d147be402a35cd022f6bd5659e7b",
+      "target": "cbd4028f56aff0f1c880d3a136727e47c86df773a86f65a49fa58d7947f3090f",
+      "kind": "read",
+      "location": {
+        "start_byte": 239,
+        "end_byte": 240,
+        "start_line": 9,
+        "start_column": 18,
+        "end_line": 9,
+        "end_column": 19
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "8fc7917db454e7631da10094f914d994353f647a8fbd7c5d3523e835b677fb5b",
+      "source": "3d4a8c472bd8779f12ab34cb9e3031ecdf9062164490546c0b189c41e3d6e9c9",
+      "target": "26a901bbc58ba9b7a3e34c8c73d8da308101257e8281198e2fc5d86237a50768",
+      "kind": "read",
+      "location": {
+        "start_byte": 257,
+        "end_byte": 269,
+        "start_line": 10,
+        "start_column": 15,
+        "end_line": 10,
+        "end_column": 27
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "7e3dc500400d6f1c396135683de2cd7dbe7e4e935a2ff7db5b125c8f446e77cd",
+      "source": "e337751e3a6951ce8150bc30f0c598d5bf632c5b686d68b89ebbfb92fdcf1d79",
+      "target": "26a901bbc58ba9b7a3e34c8c73d8da308101257e8281198e2fc5d86237a50768",
+      "kind": "read",
+      "location": {
+        "start_byte": 257,
+        "end_byte": 269,
+        "start_line": 10,
+        "start_column": 15,
+        "end_line": 10,
+        "end_column": 27
+      },
+      "confidence": 0.75
+    },
+    {
+      "id": "5a0130a6fa2322b7e4ab6e5007d9b9de791ed83bda140d3acf9cfef862053559",
+      "source": "0259fd604d123c2119cc2fb608198699fa53ece53414a1fed53ace42cf4c71a5",
+      "target": "e1f62db0fa16a917745879402c08e3858d87b098a8f46b1cacc521212f186ab5",
+      "kind": "return_value",
+      "location": {
+        "start_byte": 159,
+        "end_byte": 175,
+        "start_line": 5,
+        "start_column": 15,
+        "end_line": 5,
+        "end_column": 31
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "aef5eda1ad84b152fbe2acde98d745a0d74aa4f56c55a3341481c35252993dc3",
+      "source": "627f170838597e91a56b03e9ce3429a8a793947444a33e3ae408e8cb68f926c5",
+      "target": "e1f62db0fa16a917745879402c08e3858d87b098a8f46b1cacc521212f186ab5",
+      "kind": "return_value",
+      "location": {
+        "start_byte": 159,
+        "end_byte": 175,
+        "start_line": 5,
+        "start_column": 15,
+        "end_line": 5,
+        "end_column": 31
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "16bd20de4b7ece83ab26129cc10e112a06785dce92c6c6bd2158b509b03fad18",
+      "source": "465610ce3da17e5917b357768c11bd0598b739ac1f318892efee5ca2b92dad10",
+      "target": "e1f62db0fa16a917745879402c08e3858d87b098a8f46b1cacc521212f186ab5",
+      "kind": "return_value",
+      "location": {
+        "start_byte": 159,
+        "end_byte": 175,
+        "start_line": 5,
+        "start_column": 15,
+        "end_line": 5,
+        "end_column": 31
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "61e85fa7f36904e368535ea94f43ed111241d5018b67c7041c913b8a27c37d0f",
+      "source": "3d4a8c472bd8779f12ab34cb9e3031ecdf9062164490546c0b189c41e3d6e9c9",
+      "target": "26a901bbc58ba9b7a3e34c8c73d8da308101257e8281198e2fc5d86237a50768",
+      "kind": "return_value",
+      "location": {
+        "start_byte": 257,
+        "end_byte": 269,
+        "start_line": 10,
+        "start_column": 15,
+        "end_line": 10,
+        "end_column": 27
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "511354a95921f39b0bcedfe35add31d2e2a897594a713f840c3399a54663f625",
+      "source": "e337751e3a6951ce8150bc30f0c598d5bf632c5b686d68b89ebbfb92fdcf1d79",
+      "target": "26a901bbc58ba9b7a3e34c8c73d8da308101257e8281198e2fc5d86237a50768",
+      "kind": "return_value",
+      "location": {
+        "start_byte": 257,
+        "end_byte": 269,
+        "start_line": 10,
+        "start_column": 15,
+        "end_line": 10,
+        "end_column": 27
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "b0fae2209ae8022b4b89439b251a601a2e2c92361341b27f7b86e0c439502637",
+      "source": "8087c8ffafbfa5d04c02f143adb1aacfbdeb14588c5628b3e997d07bbb40c1cb",
+      "target": "2a2d8526bf922642567003979b284075cc7aaccbe62e6996402220aaf6c7ed3f",
+      "kind": "assign",
+      "location": {
+        "start_byte": 133,
+        "end_byte": 142,
+        "start_line": 4,
+        "start_column": 34,
+        "end_line": 4,
+        "end_column": 43
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "16f718eae2690c2c98c46248bfc8c0a282294217602b9d4f3f88ac7b005574a9",
+      "source": "31ce39d78f3b9a3ac1623b39e3861da21427126c9b6ab6e9db8208963a3008cd",
+      "target": "627f170838597e91a56b03e9ce3429a8a793947444a33e3ae408e8cb68f926c5",
+      "kind": "assign",
+      "location": {
+        "start_byte": 166,
+        "end_byte": 174,
+        "start_line": 5,
+        "start_column": 22,
+        "end_line": 5,
+        "end_column": 30
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "3ad60a54005951110bb67fb504750b5fec8ffb5a34a9e9c2f820310a72050184",
+      "source": "31ce39d78f3b9a3ac1623b39e3861da21427126c9b6ab6e9db8208963a3008cd",
+      "target": "465610ce3da17e5917b357768c11bd0598b739ac1f318892efee5ca2b92dad10",
+      "kind": "assign",
+      "location": {
+        "start_byte": 166,
+        "end_byte": 174,
+        "start_line": 5,
+        "start_column": 22,
+        "end_line": 5,
+        "end_column": 30
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "8ab37ee1532e02de5691843d53b66d978f7e992df2dd869f61f4d9c148816722",
+      "source": "8b5880c1fec583fe012eb8e0dbdc27e532c42a7b596514c36dc6aa66ee3ff001",
+      "target": "e337751e3a6951ce8150bc30f0c598d5bf632c5b686d68b89ebbfb92fdcf1d79",
+      "kind": "assign",
+      "location": {
+        "start_byte": 266,
+        "end_byte": 269,
+        "start_line": 10,
+        "start_column": 24,
+        "end_line": 10,
+        "end_column": 27
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "87ac15cc0f857c1c009cb6e6739ae7d35ebb7ef487c8a5aa262fe6dce88b27f0",
+      "source": "7d21f437cc6790b5c637cf43596021640d72c383779e9abf873c30737fa8a210",
+      "target": "510ba06ba544d37f58415a84ae9ff9493abc43338af47680f2686fcd81563cd4",
+      "kind": "assign",
+      "location": {
+        "start_byte": 122,
+        "end_byte": 130,
+        "start_line": 4,
+        "start_column": 23,
+        "end_line": 4,
+        "end_column": 31
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "6f57e58de513ac3a094579bcf77f71cb781d1402333879177e22e7665ffee7f7",
+      "source": "5eea5f18e945c4dbf7108f725025b253df65e948a138f56e673b05f621110ff1",
+      "target": "3d4a8c472bd8779f12ab34cb9e3031ecdf9062164490546c0b189c41e3d6e9c9",
+      "kind": "assign",
+      "location": {
+        "start_byte": 257,
+        "end_byte": 263,
+        "start_line": 10,
+        "start_column": 15,
+        "end_line": 10,
+        "end_column": 21
+      },
+      "confidence": 0.85
+    }
+  ],
+  "cfg_nodes": [
+    {
+      "id": "5fadbd08a54c177122d1687c93d38f88047b5a8e82c86ad498ab2ab13df2bf8e",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "Entry",
+      "stmt_range": {
+        "start_byte": 0,
+        "end_byte": 0,
+        "start_line": 0,
+        "start_column": 0,
+        "end_line": 0,
+        "end_column": 0
+      },
+      "call_context": "None",
+      "managed_scope_start_byte": null,
+      "semantic_effects": []
+    },
+    {
+      "id": "4febce1463ebdcdac42c59809d050959e7ca9fae049412182e85756bc2d59a71",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "Statement",
+      "stmt_range": {
+        "start_byte": 107,
+        "end_byte": 143,
+        "start_line": 4,
+        "start_column": 8,
+        "end_line": 4,
+        "end_column": 44
+      },
+      "call_context": "None",
+      "managed_scope_start_byte": null,
+      "semantic_effects": []
+    },
+    {
+      "id": "adef6fedec6958124d2500c47f2873bada55b50721e84ff45a5f44bf69a6fd0e",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "Return",
+      "stmt_range": {
+        "start_byte": 152,
+        "end_byte": 176,
+        "start_line": 5,
+        "start_column": 8,
+        "end_line": 5,
+        "end_column": 32
+      },
+      "call_context": "None",
+      "managed_scope_start_byte": null,
+      "semantic_effects": []
+    },
+    {
+      "id": "5184dcdb2fccfad2f5ab2cfc3c9029d73b66ef0e839658bce1f0b2405f384e95",
+      "function_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+      "kind": "Exit",
+      "stmt_range": {
+        "start_byte": 0,
+        "end_byte": 0,
+        "start_line": 0,
+        "start_column": 0,
+        "end_line": 0,
+        "end_column": 0
+      },
+      "call_context": "None",
+      "managed_scope_start_byte": null,
+      "semantic_effects": []
+    },
+    {
+      "id": "676a69aacc60d213bf12d3c76550016f4cd3d01fdb92b0a82ac9b8aaba5eb0c6",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "Entry",
+      "stmt_range": {
+        "start_byte": 0,
+        "end_byte": 0,
+        "start_line": 0,
+        "start_column": 0,
+        "end_line": 0,
+        "end_column": 0
+      },
+      "call_context": "None",
+      "managed_scope_start_byte": null,
+      "semantic_effects": []
+    },
+    {
+      "id": "b07bde78f4f2fb4e5fdde8dcdc77553fe02c9815c73965c40c557754e42d15d6",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "Statement",
+      "stmt_range": {
+        "start_byte": 229,
+        "end_byte": 241,
+        "start_line": 9,
+        "start_column": 8,
+        "end_line": 9,
+        "end_column": 20
+      },
+      "call_context": "None",
+      "managed_scope_start_byte": null,
+      "semantic_effects": []
+    },
+    {
+      "id": "ea62d2ab6639b8b248e1387cc49e0382a448f4fee9d9a5d037c2425854a4ccda",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "Return",
+      "stmt_range": {
+        "start_byte": 250,
+        "end_byte": 270,
+        "start_line": 10,
+        "start_column": 8,
+        "end_line": 10,
+        "end_column": 28
+      },
+      "call_context": "None",
+      "managed_scope_start_byte": null,
+      "semantic_effects": []
+    },
+    {
+      "id": "b7c71d1565a709718fcd4018775107e39da8ddaffd5e6452ae10eed41eb7dd27",
+      "function_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+      "kind": "Exit",
+      "stmt_range": {
+        "start_byte": 0,
+        "end_byte": 0,
+        "start_line": 0,
+        "start_column": 0,
+        "end_line": 0,
+        "end_column": 0
+      },
+      "call_context": "None",
+      "managed_scope_start_byte": null,
+      "semantic_effects": []
+    }
+  ],
+  "cfg_edges": [
+    {
+      "id": "5ce4c7c5c62a9d6d0a6a15583efdaa2bd8e131740de05064e55229e31be4565e",
+      "source": "5fadbd08a54c177122d1687c93d38f88047b5a8e82c86ad498ab2ab13df2bf8e",
+      "target": "4febce1463ebdcdac42c59809d050959e7ca9fae049412182e85756bc2d59a71",
+      "kind": "Normal"
+    },
+    {
+      "id": "57668c0cae81afb99f8afde6ce7ad062eff36eb3275fcf6cdfc99d666aec8896",
+      "source": "4febce1463ebdcdac42c59809d050959e7ca9fae049412182e85756bc2d59a71",
+      "target": "adef6fedec6958124d2500c47f2873bada55b50721e84ff45a5f44bf69a6fd0e",
+      "kind": "Normal"
+    },
+    {
+      "id": "1c0e1bd409671162077d784ecbf6708075e0012666a18552812926571efda9b7",
+      "source": "adef6fedec6958124d2500c47f2873bada55b50721e84ff45a5f44bf69a6fd0e",
+      "target": "5184dcdb2fccfad2f5ab2cfc3c9029d73b66ef0e839658bce1f0b2405f384e95",
+      "kind": "Normal"
+    },
+    {
+      "id": "3ed818dd1ceda042c72d99dc9d23f263857e4d7f578f731d76a3603613401b8a",
+      "source": "676a69aacc60d213bf12d3c76550016f4cd3d01fdb92b0a82ac9b8aaba5eb0c6",
+      "target": "b07bde78f4f2fb4e5fdde8dcdc77553fe02c9815c73965c40c557754e42d15d6",
+      "kind": "Normal"
+    },
+    {
+      "id": "6398cd4ca3ebb03b50f557a3ddd7a2b49f78a2eb114e52b7b1628c2ac5d0bd3f",
+      "source": "b07bde78f4f2fb4e5fdde8dcdc77553fe02c9815c73965c40c557754e42d15d6",
+      "target": "ea62d2ab6639b8b248e1387cc49e0382a448f4fee9d9a5d037c2425854a4ccda",
+      "kind": "Normal"
+    },
+    {
+      "id": "3aec18b848a21aedf6d1163d98a6a6a812924b44981442ca81c944e0748eeba3",
+      "source": "ea62d2ab6639b8b248e1387cc49e0382a448f4fee9d9a5d037c2425854a4ccda",
+      "target": "b7c71d1565a709718fcd4018775107e39da8ddaffd5e6452ae10eed41eb7dd27",
+      "kind": "Normal"
+    }
+  ],
+  "budget_exceeded": false,
+  "lexical_failed": false,
+  "dataflow_failed": false,
+  "cfg_failed": false,
+  "layer": "dataflow"
+}

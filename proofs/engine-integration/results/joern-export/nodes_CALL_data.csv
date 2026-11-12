@@ -1,0 +1,5 @@
+30064771072,CALL,-1,,,int subtotal = quantity * unitPrice,13,STATIC_DISPATCH,,5,<operator>.assignment,<operator>.assignment,,,2,,,,int
+30064771073,CALL,2,,,quantity * unitPrice,24,STATIC_DISPATCH,,5,<operator>.multiplication,<operator>.multiplication,,,2,,,,int
+30064771074,CALL,1,,,this.addFee(subtotal),16,DYNAMIC_DISPATCH,,6,proof.PriceFlow.addFee:int(int),addFee,,,1,,int(int),,int
+30064771075,CALL,-1,,,int fee = 2,13,STATIC_DISPATCH,,10,<operator>.assignment,<operator>.assignment,,,2,,,,int
+30064771076,CALL,1,,,amount + fee,16,STATIC_DISPATCH,,11,<operator>.addition,<operator>.addition,,,1,,,,int

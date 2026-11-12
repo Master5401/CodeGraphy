@@ -1,0 +1,48 @@
+107374182400,METHOD,proof.PriceFlow,TYPE_DECL,"    public void <init>()
+    {
+        proof.PriceFlow this;
+
+        this := @this: proof.PriceFlow;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+",,,${JOERN_TEMP}\\proof\\PriceFlow.class,proof.PriceFlow.<init>:void(),<empty>,,false,2,7,<init>,,,1,void()
+107374182401,METHOD,proof.PriceFlow,TYPE_DECL,"    public int total(int, int)
+    {
+        int quantity, unitPrice, subtotal;
+        proof.PriceFlow this;
+
+        this := @this: proof.PriceFlow;
+
+        quantity := @parameter0: int;
+
+        unitPrice := @parameter1: int;
+
+        subtotal = quantity * unitPrice;
+
+        quantity = virtualinvoke this.<proof.PriceFlow: int addFee(int)>(subtotal);
+
+        return quantity;
+    }
+",,,${JOERN_TEMP}\\proof\\PriceFlow.class,"proof.PriceFlow.total:int(int,int)",<empty>,,false,4,11,total,,,2,"int(int,int)"
+107374182402,METHOD,proof.PriceFlow,TYPE_DECL,"    private int addFee(int)
+    {
+        int amount;
+        proof.PriceFlow this;
+        byte fee;
+
+        this := @this: proof.PriceFlow;
+
+        amount := @parameter0: int;
+
+        amount = amount + 2;
+
+        return amount;
+    }
+",,,${JOERN_TEMP}\\proof\\PriceFlow.class,proof.PriceFlow.addFee:int(int),<empty>,,false,10,10,addFee,,,3,int(int)
+107374182403,METHOD,<global>,NAMESPACE_BLOCK,<empty>,,,<empty>,java.lang.Object.<init>:void(),<empty>,,true,,,<init>,,,0,void()
+107374182404,METHOD,<global>,NAMESPACE_BLOCK,<empty>,,,<empty>,<operator>.assignment,<empty>,,true,,,<operator>.assignment,,,0,
+107374182405,METHOD,<global>,NAMESPACE_BLOCK,<empty>,,,<empty>,<operator>.multiplication,<empty>,,true,,,<operator>.multiplication,,,0,
+107374182406,METHOD,<global>,NAMESPACE_BLOCK,<empty>,,,<empty>,<operator>.addition,<empty>,,true,,,<operator>.addition,,,0,

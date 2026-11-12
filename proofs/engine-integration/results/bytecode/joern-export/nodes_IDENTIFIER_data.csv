@@ -1,0 +1,11 @@
+68719476736,IDENTIFIER,0,,,this,,,3,this,,,1,,proof.PriceFlow
+68719476737,IDENTIFIER,1,,,subtotal,,,5,subtotal,,,1,,int
+68719476738,IDENTIFIER,1,,,quantity,,,5,quantity,,,1,,int
+68719476739,IDENTIFIER,2,,,unitPrice,,,5,unitPrice,,,2,,int
+68719476740,IDENTIFIER,1,,,quantity,,,6,quantity,,,1,,int
+68719476741,IDENTIFIER,0,,,this,,,6,this,,,1,,proof.PriceFlow
+68719476742,IDENTIFIER,1,,,subtotal,,,6,subtotal,,,2,,int
+68719476743,IDENTIFIER,1,,,quantity,,,6,quantity,,,1,,int
+68719476744,IDENTIFIER,1,,,amount,,,11,amount,,,1,,int
+68719476745,IDENTIFIER,1,,,amount,,,11,amount,,,1,,int
+68719476746,IDENTIFIER,1,,,amount,,,11,amount,,,1,,int
