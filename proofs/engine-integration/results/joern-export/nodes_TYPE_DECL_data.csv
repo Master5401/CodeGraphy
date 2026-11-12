@@ -1,0 +1,9 @@
+167503724544,TYPE_DECL,,src\\main\\java\\proof\\PriceFlow.java:proof,NAMESPACE_BLOCK,public final class PriceFlow,1,src\\main\\java\\proof\\PriceFlow.java,proof.PriceFlow,LObject;,java.lang.Object,false,3,PriceFlow,,,1
+167503724545,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,ANY,<empty>,,true,,ANY,,,-1
+167503724546,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,boolean,<empty>,,true,,boolean,,,-1
+167503724547,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,int,<empty>,,true,,int,,,-1
+167503724548,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,java.lang.Class,<empty>,,true,,Class,,,-1
+167503724549,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,java.lang.Object,<empty>,,true,,Object,,,-1
+167503724550,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,java.lang.String,<empty>,,true,,String,,,-1
+167503724551,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,long,<empty>,,true,,long,,,-1
+167503724552,TYPE_DECL,,<global>,NAMESPACE_BLOCK,<empty>,,<unknown>,void,<empty>,,true,,void,,,-1

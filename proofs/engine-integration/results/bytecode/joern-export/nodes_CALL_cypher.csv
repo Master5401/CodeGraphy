@@ -1,0 +1,21 @@
+LOAD CSV FROM 'file:/nodes_CALL_data.csv' AS line
+CREATE (:CALL {
+id: toInteger(line[0]),
+ARGUMENT_INDEX: toInteger(line[2]),
+ARGUMENT_LABEL: line[3],
+ARGUMENT_NAME: line[4],
+CODE: line[5],
+COLUMN_NUMBER: line[6],
+DISPATCH_TYPE: line[7],
+DYNAMIC_TYPE_HINT_FULL_NAME: split(line[8], ";"),
+LINE_NUMBER: toInteger(line[9]),
+METHOD_FULL_NAME: line[10],
+NAME: line[11],
+OFFSET: line[12],
+OFFSET_END: line[13],
+ORDER: toInteger(line[14]),
+POSSIBLE_TYPES: split(line[15], ";"),
+SIGNATURE: line[16],
+STATIC_RECEIVER: line[17],
+TYPE_FULL_NAME: line[18]
+});

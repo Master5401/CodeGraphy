@@ -1,0 +1,1300 @@
+{
+  "coverage": {
+    "atlas_diagnostics": [],
+    "joern_cfg_edges": 22,
+    "joern_control_dominance_edges": 22,
+    "joern_edges_exported": 368,
+    "joern_nodes_exported": 108,
+    "joern_reaching_def_edges": 77
+  },
+  "entities": [
+    {
+      "confidence": null,
+      "confidence_note": "Neither engine supplies a calibrated confidence score for this declaration.",
+      "evidence": [
+        {
+          "engine_id": "1a3437ab4904073e66911ee0cdc5914566f80a3c6dca60d45b2c568847a5c5b1",
+          "line_end": 7,
+          "line_start": 4,
+          "path": "src/main/java/proof/PriceFlow.java",
+          "provider": "atlas-engine",
+          "provider_version": "1.7.0",
+          "range": {
+            "end_byte": 182,
+            "end_column": 5,
+            "end_line": 6,
+            "start_byte": 51,
+            "start_column": 4,
+            "start_line": 3
+          },
+          "resolution_state": "RESOLVED"
+        },
+        {
+          "engine_id": "107374182400",
+          "line_end": 7,
+          "line_start": 4,
+          "path": "src/main/java/proof/PriceFlow.java",
+          "provider": "joern",
+          "provider_version": "4.0.681+5-427508c9",
+          "resolution_state": "RESOLVED"
+        }
+      ],
+      "id": "method:proof.PriceFlow.total",
+      "kind": "method",
+      "name": "total",
+      "qualified_name": "proof.PriceFlow.total:int(int,int)",
+      "resolution_state": "RESOLVED",
+      "signature": "(int quantity, int unitPrice): int"
+    },
+    {
+      "confidence": null,
+      "confidence_note": "Neither engine supplies a calibrated confidence score for this declaration.",
+      "evidence": [
+        {
+          "engine_id": "f008604f92222e9f0c95a153fb2a021ebb9a7679ad1610766f16998a6d804a57",
+          "line_end": 12,
+          "line_start": 9,
+          "path": "src/main/java/proof/PriceFlow.java",
+          "provider": "atlas-engine",
+          "provider_version": "1.7.0",
+          "range": {
+            "end_byte": 276,
+            "end_column": 5,
+            "end_line": 11,
+            "start_byte": 188,
+            "start_column": 4,
+            "start_line": 8
+          },
+          "resolution_state": "RESOLVED"
+        },
+        {
+          "engine_id": "107374182401",
+          "line_end": 12,
+          "line_start": 9,
+          "path": "src/main/java/proof/PriceFlow.java",
+          "provider": "joern",
+          "provider_version": "4.0.681+5-427508c9",
+          "resolution_state": "RESOLVED"
+        }
+      ],
+      "id": "method:proof.PriceFlow.addFee",
+      "kind": "method",
+      "name": "addFee",
+      "qualified_name": "proof.PriceFlow.addFee:int(int)",
+      "resolution_state": "RESOLVED",
+      "signature": "(int amount): int"
+    }
+  ],
+  "fixture": {
+    "path": "src/main/java/proof/PriceFlow.java",
+    "sha256": "8129797579bd19e153103e81c78fcec9fcac540b267138b7b6696ff509728ffe",
+    "source": [
+      "package proof;",
+      "",
+      "public final class PriceFlow {",
+      "    public int total(int quantity, int unitPrice) {",
+      "        int subtotal = quantity * unitPrice;",
+      "        return addFee(subtotal);",
+      "    }",
+      "",
+      "    private int addFee(int amount) {",
+      "        int fee = 2;",
+      "        return amount + fee;",
+      "    }",
+      "}"
+    ]
+  },
+  "operation_ir": [
+    {
+      "arguments": [
+        "subtotal",
+        "<operator>.multiplication"
+      ],
+      "code": "int subtotal = quantity * unitPrice",
+      "confidence": null,
+      "evidence": {
+        "engine_id": "30064771072",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_line": "int subtotal = quantity * unitPrice;"
+      },
+      "id": "joern-call:30064771072",
+      "kind": "ASSIGN",
+      "line": 5,
+      "method": "proof.PriceFlow.total",
+      "provider_label": "<operator>.assignment",
+      "resolution_state": "RESOLVED",
+      "target_engine_method_id": null
+    },
+    {
+      "arguments": [
+        "quantity",
+        "unitPrice"
+      ],
+      "code": "quantity * unitPrice",
+      "confidence": null,
+      "evidence": {
+        "engine_id": "30064771073",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_line": "int subtotal = quantity * unitPrice;"
+      },
+      "id": "joern-call:30064771073",
+      "kind": "MULTIPLY",
+      "line": 5,
+      "method": "proof.PriceFlow.total",
+      "provider_label": "<operator>.multiplication",
+      "resolution_state": "RESOLVED",
+      "target_engine_method_id": null
+    },
+    {
+      "arguments": [
+        "subtotal"
+      ],
+      "code": "this.addFee(subtotal)",
+      "confidence": null,
+      "evidence": {
+        "engine_id": "30064771074",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_line": "return addFee(subtotal);"
+      },
+      "id": "joern-call:30064771074",
+      "kind": "CALL",
+      "line": 6,
+      "method": "proof.PriceFlow.total",
+      "provider_label": "addFee",
+      "resolution_state": "RESOLVED",
+      "target_engine_method_id": "107374182401"
+    },
+    {
+      "arguments": [
+        "fee",
+        "2"
+      ],
+      "code": "int fee = 2",
+      "confidence": null,
+      "evidence": {
+        "engine_id": "30064771075",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_line": "int fee = 2;"
+      },
+      "id": "joern-call:30064771075",
+      "kind": "ASSIGN",
+      "line": 10,
+      "method": "proof.PriceFlow.addFee",
+      "provider_label": "<operator>.assignment",
+      "resolution_state": "RESOLVED",
+      "target_engine_method_id": null
+    },
+    {
+      "arguments": [
+        "amount",
+        "fee"
+      ],
+      "code": "amount + fee",
+      "confidence": null,
+      "evidence": {
+        "engine_id": "30064771076",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_line": "return amount + fee;"
+      },
+      "id": "joern-call:30064771076",
+      "kind": "ADD",
+      "line": 11,
+      "method": "proof.PriceFlow.addFee",
+      "provider_label": "<operator>.addition",
+      "resolution_state": "RESOLVED",
+      "target_engine_method_id": null
+    },
+    {
+      "arguments": [],
+      "code": "return addFee(subtotal);",
+      "confidence": null,
+      "evidence": {
+        "engine_id": "141733920768",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_line": "return addFee(subtotal);"
+      },
+      "id": "joern-return:141733920768",
+      "kind": "RETURN",
+      "line": 6,
+      "method": "proof.PriceFlow.total",
+      "provider_label": "RETURN",
+      "resolution_state": "RESOLVED"
+    },
+    {
+      "arguments": [],
+      "code": "return amount + fee;",
+      "confidence": null,
+      "evidence": {
+        "engine_id": "141733920769",
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_line": "return amount + fee;"
+      },
+      "id": "joern-return:141733920769",
+      "kind": "RETURN",
+      "line": 11,
+      "method": "proof.PriceFlow.addFee",
+      "provider_label": "RETURN",
+      "resolution_state": "RESOLVED"
+    }
+  ],
+  "providers": [
+    {
+      "api": "Engine::extract_file_with_mode(ExtractionMode::Full)",
+      "commit": "0f8379ff61a6f5ea1ae888d331f21b8b44f6a5b7",
+      "name": "atlas-engine",
+      "version": "1.7.0"
+    },
+    {
+      "api": "joern-parse JAVASRC + joern-export neo4jcsv",
+      "commit": "427508c97c0b461c70a8f5292346b83906e43a47",
+      "name": "joern",
+      "version": "4.0.681+5-427508c9"
+    }
+  ],
+  "relationships": [
+    {
+      "confidence": 0.95,
+      "evidence": {
+        "engine_id": "46b23c3efc3b08347084c6862c2d3b1c76b4baf769a6121b102cb25233c29c4d",
+        "line_end": 5,
+        "line_start": 5,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 119,
+          "end_column": 20,
+          "end_line": 4,
+          "start_byte": 111,
+          "start_column": 12,
+          "start_line": 4
+        }
+      },
+      "id": "atlas-dataflow:46b23c3efc3b08347084c6862c2d3b1c76b4baf769a6121b102cb25233c29c4d",
+      "kind": "assign",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "ca1b269312c01914f7532527c0dffd48314808e85c9f5e0bc939ae9872475d8c",
+        "name": "quantity * unitPrice"
+      },
+      "target": {
+        "id": "31ce39d78f3b9a3ac1623b39e3861da21427126c9b6ab6e9db8208963a3008cd",
+        "name": "subtotal"
+      }
+    },
+    {
+      "confidence": 0.95,
+      "evidence": {
+        "engine_id": "2a877c23b719f3380b0c25597deaca43d2f2339e73fba8277498dbf92933095e",
+        "line_end": 10,
+        "line_start": 10,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 236,
+          "end_column": 15,
+          "end_line": 9,
+          "start_byte": 233,
+          "start_column": 12,
+          "start_line": 9
+        }
+      },
+      "id": "atlas-dataflow:2a877c23b719f3380b0c25597deaca43d2f2339e73fba8277498dbf92933095e",
+      "kind": "assign",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "cbd4028f56aff0f1c880d3a136727e47c86df773a86f65a49fa58d7947f3090f",
+        "name": "2"
+      },
+      "target": {
+        "id": "8b5880c1fec583fe012eb8e0dbdc27e532c42a7b596514c36dc6aa66ee3ff001",
+        "name": "fee"
+      }
+    },
+    {
+      "confidence": 0.75,
+      "evidence": {
+        "engine_id": "bacefe1c652af19a313c5027749fc0f9266672a2c86a036d22281c4a3ad5b230",
+        "line_end": 6,
+        "line_start": 6,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 174,
+          "end_column": 30,
+          "end_line": 5,
+          "start_byte": 166,
+          "start_column": 22,
+          "start_line": 5
+        }
+      },
+      "id": "atlas-dataflow:bacefe1c652af19a313c5027749fc0f9266672a2c86a036d22281c4a3ad5b230",
+      "kind": "arg_to_call",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "627f170838597e91a56b03e9ce3429a8a793947444a33e3ae408e8cb68f926c5",
+        "name": "subtotal"
+      },
+      "target": {
+        "id": "0259fd604d123c2119cc2fb608198699fa53ece53414a1fed53ace42cf4c71a5",
+        "name": "addFee"
+      }
+    },
+    {
+      "confidence": 0.75,
+      "evidence": {
+        "engine_id": "ebc40ad49d1bda0605001abfc825b7d640a2c391d8c1e3b00be282d598cc9d7d",
+        "line_end": 5,
+        "line_start": 5,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 142,
+          "end_column": 43,
+          "end_line": 4,
+          "start_byte": 122,
+          "start_column": 23,
+          "start_line": 4
+        }
+      },
+      "id": "atlas-dataflow:ebc40ad49d1bda0605001abfc825b7d640a2c391d8c1e3b00be282d598cc9d7d",
+      "kind": "read",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "510ba06ba544d37f58415a84ae9ff9493abc43338af47680f2686fcd81563cd4",
+        "name": "quantity"
+      },
+      "target": {
+        "id": "ca1b269312c01914f7532527c0dffd48314808e85c9f5e0bc939ae9872475d8c",
+        "name": "quantity * unitPrice"
+      }
+    },
+    {
+      "confidence": 0.75,
+      "evidence": {
+        "engine_id": "78cc369e65b288b41af43cfd0cea191f95168b0f26fedec9fa68238acf554ed3",
+        "line_end": 5,
+        "line_start": 5,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 142,
+          "end_column": 43,
+          "end_line": 4,
+          "start_byte": 122,
+          "start_column": 23,
+          "start_line": 4
+        }
+      },
+      "id": "atlas-dataflow:78cc369e65b288b41af43cfd0cea191f95168b0f26fedec9fa68238acf554ed3",
+      "kind": "read",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "2a2d8526bf922642567003979b284075cc7aaccbe62e6996402220aaf6c7ed3f",
+        "name": "unitPrice"
+      },
+      "target": {
+        "id": "ca1b269312c01914f7532527c0dffd48314808e85c9f5e0bc939ae9872475d8c",
+        "name": "quantity * unitPrice"
+      }
+    },
+    {
+      "confidence": 0.75,
+      "evidence": {
+        "engine_id": "2f2146ded2eaea59cb5ba1cb5047c10f0a86ea9762016208a136724a58d809a7",
+        "line_end": 6,
+        "line_start": 6,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 175,
+          "end_column": 31,
+          "end_line": 5,
+          "start_byte": 159,
+          "start_column": 15,
+          "start_line": 5
+        }
+      },
+      "id": "atlas-dataflow:2f2146ded2eaea59cb5ba1cb5047c10f0a86ea9762016208a136724a58d809a7",
+      "kind": "read",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "0259fd604d123c2119cc2fb608198699fa53ece53414a1fed53ace42cf4c71a5",
+        "name": "addFee"
+      },
+      "target": {
+        "id": "e1f62db0fa16a917745879402c08e3858d87b098a8f46b1cacc521212f186ab5",
+        "name": "addFee(subtotal)"
+      }
+    },
+    {
+      "confidence": 0.75,
+      "evidence": {
+        "engine_id": "e16f1e6b14d168c7ba60541993eb56d67d07b3280868c8885136497999fb5dea",
+        "line_end": 6,
+        "line_start": 6,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 175,
+          "end_column": 31,
+          "end_line": 5,
+          "start_byte": 159,
+          "start_column": 15,
+          "start_line": 5
+        }
+      },
+      "id": "atlas-dataflow:e16f1e6b14d168c7ba60541993eb56d67d07b3280868c8885136497999fb5dea",
+      "kind": "read",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "465610ce3da17e5917b357768c11bd0598b739ac1f318892efee5ca2b92dad10",
+        "name": "subtotal"
+      },
+      "target": {
+        "id": "e1f62db0fa16a917745879402c08e3858d87b098a8f46b1cacc521212f186ab5",
+        "name": "addFee(subtotal)"
+      }
+    },
+    {
+      "confidence": 0.75,
+      "evidence": {
+        "engine_id": "c167bdd29454cf896f4c5c839f0dc41c3fc6587d5e25f7f20d602c07d5156c69",
+        "line_end": 10,
+        "line_start": 10,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 240,
+          "end_column": 19,
+          "end_line": 9,
+          "start_byte": 239,
+          "start_column": 18,
+          "start_line": 9
+        }
+      },
+      "id": "atlas-dataflow:c167bdd29454cf896f4c5c839f0dc41c3fc6587d5e25f7f20d602c07d5156c69",
+      "kind": "read",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "2c690a703d9dea121768ee4d4cf6ac6de928d147be402a35cd022f6bd5659e7b",
+        "name": "2"
+      },
+      "target": {
+        "id": "cbd4028f56aff0f1c880d3a136727e47c86df773a86f65a49fa58d7947f3090f",
+        "name": "2"
+      }
+    },
+    {
+      "confidence": 0.75,
+      "evidence": {
+        "engine_id": "8fc7917db454e7631da10094f914d994353f647a8fbd7c5d3523e835b677fb5b",
+        "line_end": 11,
+        "line_start": 11,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 269,
+          "end_column": 27,
+          "end_line": 10,
+          "start_byte": 257,
+          "start_column": 15,
+          "start_line": 10
+        }
+      },
+      "id": "atlas-dataflow:8fc7917db454e7631da10094f914d994353f647a8fbd7c5d3523e835b677fb5b",
+      "kind": "read",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "3d4a8c472bd8779f12ab34cb9e3031ecdf9062164490546c0b189c41e3d6e9c9",
+        "name": "amount"
+      },
+      "target": {
+        "id": "26a901bbc58ba9b7a3e34c8c73d8da308101257e8281198e2fc5d86237a50768",
+        "name": "amount + fee"
+      }
+    },
+    {
+      "confidence": 0.75,
+      "evidence": {
+        "engine_id": "7e3dc500400d6f1c396135683de2cd7dbe7e4e935a2ff7db5b125c8f446e77cd",
+        "line_end": 11,
+        "line_start": 11,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 269,
+          "end_column": 27,
+          "end_line": 10,
+          "start_byte": 257,
+          "start_column": 15,
+          "start_line": 10
+        }
+      },
+      "id": "atlas-dataflow:7e3dc500400d6f1c396135683de2cd7dbe7e4e935a2ff7db5b125c8f446e77cd",
+      "kind": "read",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "e337751e3a6951ce8150bc30f0c598d5bf632c5b686d68b89ebbfb92fdcf1d79",
+        "name": "fee"
+      },
+      "target": {
+        "id": "26a901bbc58ba9b7a3e34c8c73d8da308101257e8281198e2fc5d86237a50768",
+        "name": "amount + fee"
+      }
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "engine_id": "5a0130a6fa2322b7e4ab6e5007d9b9de791ed83bda140d3acf9cfef862053559",
+        "line_end": 6,
+        "line_start": 6,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 175,
+          "end_column": 31,
+          "end_line": 5,
+          "start_byte": 159,
+          "start_column": 15,
+          "start_line": 5
+        }
+      },
+      "id": "atlas-dataflow:5a0130a6fa2322b7e4ab6e5007d9b9de791ed83bda140d3acf9cfef862053559",
+      "kind": "return_value",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "0259fd604d123c2119cc2fb608198699fa53ece53414a1fed53ace42cf4c71a5",
+        "name": "addFee"
+      },
+      "target": {
+        "id": "e1f62db0fa16a917745879402c08e3858d87b098a8f46b1cacc521212f186ab5",
+        "name": "addFee(subtotal)"
+      }
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "engine_id": "aef5eda1ad84b152fbe2acde98d745a0d74aa4f56c55a3341481c35252993dc3",
+        "line_end": 6,
+        "line_start": 6,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 175,
+          "end_column": 31,
+          "end_line": 5,
+          "start_byte": 159,
+          "start_column": 15,
+          "start_line": 5
+        }
+      },
+      "id": "atlas-dataflow:aef5eda1ad84b152fbe2acde98d745a0d74aa4f56c55a3341481c35252993dc3",
+      "kind": "return_value",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "627f170838597e91a56b03e9ce3429a8a793947444a33e3ae408e8cb68f926c5",
+        "name": "subtotal"
+      },
+      "target": {
+        "id": "e1f62db0fa16a917745879402c08e3858d87b098a8f46b1cacc521212f186ab5",
+        "name": "addFee(subtotal)"
+      }
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "engine_id": "16bd20de4b7ece83ab26129cc10e112a06785dce92c6c6bd2158b509b03fad18",
+        "line_end": 6,
+        "line_start": 6,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 175,
+          "end_column": 31,
+          "end_line": 5,
+          "start_byte": 159,
+          "start_column": 15,
+          "start_line": 5
+        }
+      },
+      "id": "atlas-dataflow:16bd20de4b7ece83ab26129cc10e112a06785dce92c6c6bd2158b509b03fad18",
+      "kind": "return_value",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "465610ce3da17e5917b357768c11bd0598b739ac1f318892efee5ca2b92dad10",
+        "name": "subtotal"
+      },
+      "target": {
+        "id": "e1f62db0fa16a917745879402c08e3858d87b098a8f46b1cacc521212f186ab5",
+        "name": "addFee(subtotal)"
+      }
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "engine_id": "61e85fa7f36904e368535ea94f43ed111241d5018b67c7041c913b8a27c37d0f",
+        "line_end": 11,
+        "line_start": 11,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 269,
+          "end_column": 27,
+          "end_line": 10,
+          "start_byte": 257,
+          "start_column": 15,
+          "start_line": 10
+        }
+      },
+      "id": "atlas-dataflow:61e85fa7f36904e368535ea94f43ed111241d5018b67c7041c913b8a27c37d0f",
+      "kind": "return_value",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "3d4a8c472bd8779f12ab34cb9e3031ecdf9062164490546c0b189c41e3d6e9c9",
+        "name": "amount"
+      },
+      "target": {
+        "id": "26a901bbc58ba9b7a3e34c8c73d8da308101257e8281198e2fc5d86237a50768",
+        "name": "amount + fee"
+      }
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "engine_id": "511354a95921f39b0bcedfe35add31d2e2a897594a713f840c3399a54663f625",
+        "line_end": 11,
+        "line_start": 11,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 269,
+          "end_column": 27,
+          "end_line": 10,
+          "start_byte": 257,
+          "start_column": 15,
+          "start_line": 10
+        }
+      },
+      "id": "atlas-dataflow:511354a95921f39b0bcedfe35add31d2e2a897594a713f840c3399a54663f625",
+      "kind": "return_value",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "e337751e3a6951ce8150bc30f0c598d5bf632c5b686d68b89ebbfb92fdcf1d79",
+        "name": "fee"
+      },
+      "target": {
+        "id": "26a901bbc58ba9b7a3e34c8c73d8da308101257e8281198e2fc5d86237a50768",
+        "name": "amount + fee"
+      }
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "engine_id": "b0fae2209ae8022b4b89439b251a601a2e2c92361341b27f7b86e0c439502637",
+        "line_end": 5,
+        "line_start": 5,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 142,
+          "end_column": 43,
+          "end_line": 4,
+          "start_byte": 133,
+          "start_column": 34,
+          "start_line": 4
+        }
+      },
+      "id": "atlas-dataflow:b0fae2209ae8022b4b89439b251a601a2e2c92361341b27f7b86e0c439502637",
+      "kind": "assign",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "8087c8ffafbfa5d04c02f143adb1aacfbdeb14588c5628b3e997d07bbb40c1cb",
+        "name": "unitPrice"
+      },
+      "target": {
+        "id": "2a2d8526bf922642567003979b284075cc7aaccbe62e6996402220aaf6c7ed3f",
+        "name": "unitPrice"
+      }
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "engine_id": "16f718eae2690c2c98c46248bfc8c0a282294217602b9d4f3f88ac7b005574a9",
+        "line_end": 6,
+        "line_start": 6,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 174,
+          "end_column": 30,
+          "end_line": 5,
+          "start_byte": 166,
+          "start_column": 22,
+          "start_line": 5
+        }
+      },
+      "id": "atlas-dataflow:16f718eae2690c2c98c46248bfc8c0a282294217602b9d4f3f88ac7b005574a9",
+      "kind": "assign",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "31ce39d78f3b9a3ac1623b39e3861da21427126c9b6ab6e9db8208963a3008cd",
+        "name": "subtotal"
+      },
+      "target": {
+        "id": "627f170838597e91a56b03e9ce3429a8a793947444a33e3ae408e8cb68f926c5",
+        "name": "subtotal"
+      }
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "engine_id": "3ad60a54005951110bb67fb504750b5fec8ffb5a34a9e9c2f820310a72050184",
+        "line_end": 6,
+        "line_start": 6,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 174,
+          "end_column": 30,
+          "end_line": 5,
+          "start_byte": 166,
+          "start_column": 22,
+          "start_line": 5
+        }
+      },
+      "id": "atlas-dataflow:3ad60a54005951110bb67fb504750b5fec8ffb5a34a9e9c2f820310a72050184",
+      "kind": "assign",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "31ce39d78f3b9a3ac1623b39e3861da21427126c9b6ab6e9db8208963a3008cd",
+        "name": "subtotal"
+      },
+      "target": {
+        "id": "465610ce3da17e5917b357768c11bd0598b739ac1f318892efee5ca2b92dad10",
+        "name": "subtotal"
+      }
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "engine_id": "8ab37ee1532e02de5691843d53b66d978f7e992df2dd869f61f4d9c148816722",
+        "line_end": 11,
+        "line_start": 11,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 269,
+          "end_column": 27,
+          "end_line": 10,
+          "start_byte": 266,
+          "start_column": 24,
+          "start_line": 10
+        }
+      },
+      "id": "atlas-dataflow:8ab37ee1532e02de5691843d53b66d978f7e992df2dd869f61f4d9c148816722",
+      "kind": "assign",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "8b5880c1fec583fe012eb8e0dbdc27e532c42a7b596514c36dc6aa66ee3ff001",
+        "name": "fee"
+      },
+      "target": {
+        "id": "e337751e3a6951ce8150bc30f0c598d5bf632c5b686d68b89ebbfb92fdcf1d79",
+        "name": "fee"
+      }
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "engine_id": "87ac15cc0f857c1c009cb6e6739ae7d35ebb7ef487c8a5aa262fe6dce88b27f0",
+        "line_end": 5,
+        "line_start": 5,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 130,
+          "end_column": 31,
+          "end_line": 4,
+          "start_byte": 122,
+          "start_column": 23,
+          "start_line": 4
+        }
+      },
+      "id": "atlas-dataflow:87ac15cc0f857c1c009cb6e6739ae7d35ebb7ef487c8a5aa262fe6dce88b27f0",
+      "kind": "assign",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "7d21f437cc6790b5c637cf43596021640d72c383779e9abf873c30737fa8a210",
+        "name": "quantity"
+      },
+      "target": {
+        "id": "510ba06ba544d37f58415a84ae9ff9493abc43338af47680f2686fcd81563cd4",
+        "name": "quantity"
+      }
+    },
+    {
+      "confidence": 0.85,
+      "evidence": {
+        "engine_id": "6f57e58de513ac3a094579bcf77f71cb781d1402333879177e22e7665ffee7f7",
+        "line_end": 11,
+        "line_start": 11,
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "atlas-engine",
+        "provider_version": "1.7.0",
+        "range": {
+          "end_byte": 263,
+          "end_column": 21,
+          "end_line": 10,
+          "start_byte": 257,
+          "start_column": 15,
+          "start_line": 10
+        }
+      },
+      "id": "atlas-dataflow:6f57e58de513ac3a094579bcf77f71cb781d1402333879177e22e7665ffee7f7",
+      "kind": "assign",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "5eea5f18e945c4dbf7108f725025b253df65e948a138f56e673b05f621110ff1",
+        "name": "amount"
+      },
+      "target": {
+        "id": "3d4a8c472bd8779f12ab34cb9e3031ecdf9062164490546c0b189c41e3d6e9c9",
+        "name": "amount"
+      }
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          5,
+          5
+        ],
+        "source_node_id": "68719476737",
+        "target_node_id": "30064771072"
+      },
+      "id": "joern-reaching-def:68719476737:30064771072:subtotal",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "68719476737",
+        "name": "subtotal"
+      },
+      "target": {
+        "id": "30064771072",
+        "name": "<operator>.assignment"
+      },
+      "variable": "subtotal"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          5,
+          6
+        ],
+        "source_node_id": "68719476737",
+        "target_node_id": "68719476740"
+      },
+      "id": "joern-reaching-def:68719476737:68719476740:subtotal",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "68719476737",
+        "name": "subtotal"
+      },
+      "target": {
+        "id": "68719476740",
+        "name": "subtotal"
+      },
+      "variable": "subtotal"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          5,
+          5
+        ],
+        "source_node_id": "68719476738",
+        "target_node_id": "30064771073"
+      },
+      "id": "joern-reaching-def:68719476738:30064771073:quantity",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "68719476738",
+        "name": "quantity"
+      },
+      "target": {
+        "id": "30064771073",
+        "name": "<operator>.multiplication"
+      },
+      "variable": "quantity"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          5,
+          5
+        ],
+        "source_node_id": "68719476739",
+        "target_node_id": "30064771073"
+      },
+      "id": "joern-reaching-def:68719476739:30064771073:unitPrice",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "68719476739",
+        "name": "unitPrice"
+      },
+      "target": {
+        "id": "30064771073",
+        "name": "<operator>.multiplication"
+      },
+      "variable": "unitPrice"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          6,
+          6
+        ],
+        "source_node_id": "68719476740",
+        "target_node_id": "30064771074"
+      },
+      "id": "joern-reaching-def:68719476740:30064771074:subtotal",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "68719476740",
+        "name": "subtotal"
+      },
+      "target": {
+        "id": "30064771074",
+        "name": "addFee"
+      },
+      "variable": "subtotal"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          10,
+          10
+        ],
+        "source_node_id": "68719476741",
+        "target_node_id": "30064771075"
+      },
+      "id": "joern-reaching-def:68719476741:30064771075:fee",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "68719476741",
+        "name": "fee"
+      },
+      "target": {
+        "id": "30064771075",
+        "name": "<operator>.assignment"
+      },
+      "variable": "fee"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          10,
+          11
+        ],
+        "source_node_id": "68719476741",
+        "target_node_id": "68719476743"
+      },
+      "id": "joern-reaching-def:68719476741:68719476743:fee",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "68719476741",
+        "name": "fee"
+      },
+      "target": {
+        "id": "68719476743",
+        "name": "fee"
+      },
+      "variable": "fee"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          11,
+          11
+        ],
+        "source_node_id": "68719476742",
+        "target_node_id": "30064771076"
+      },
+      "id": "joern-reaching-def:68719476742:30064771076:amount",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "68719476742",
+        "name": "amount"
+      },
+      "target": {
+        "id": "30064771076",
+        "name": "<operator>.addition"
+      },
+      "variable": "amount"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          11,
+          11
+        ],
+        "source_node_id": "68719476743",
+        "target_node_id": "30064771076"
+      },
+      "id": "joern-reaching-def:68719476743:30064771076:fee",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "68719476743",
+        "name": "fee"
+      },
+      "target": {
+        "id": "30064771076",
+        "name": "<operator>.addition"
+      },
+      "variable": "fee"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          10,
+          10
+        ],
+        "source_node_id": "90194313216",
+        "target_node_id": "68719476741"
+      },
+      "id": "joern-reaching-def:90194313216:68719476741:2",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "90194313216",
+        "name": "2"
+      },
+      "target": {
+        "id": "68719476741",
+        "name": "fee"
+      },
+      "variable": "2"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          10,
+          10
+        ],
+        "source_node_id": "90194313216",
+        "target_node_id": "30064771075"
+      },
+      "id": "joern-reaching-def:90194313216:30064771075:2",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "90194313216",
+        "name": "2"
+      },
+      "target": {
+        "id": "30064771075",
+        "name": "<operator>.assignment"
+      },
+      "variable": "2"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          4,
+          5
+        ],
+        "source_node_id": "111669149697",
+        "target_node_id": "68719476738"
+      },
+      "id": "joern-reaching-def:111669149697:68719476738:quantity",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "111669149697",
+        "name": "quantity"
+      },
+      "target": {
+        "id": "68719476738",
+        "name": "quantity"
+      },
+      "variable": "quantity"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          4,
+          5
+        ],
+        "source_node_id": "111669149698",
+        "target_node_id": "68719476739"
+      },
+      "id": "joern-reaching-def:111669149698:68719476739:unitPrice",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "111669149698",
+        "name": "unitPrice"
+      },
+      "target": {
+        "id": "68719476739",
+        "name": "unitPrice"
+      },
+      "variable": "unitPrice"
+    },
+    {
+      "confidence": null,
+      "evidence": {
+        "path": "src/main/java/proof/PriceFlow.java",
+        "provider": "joern",
+        "provider_version": "4.0.681+5-427508c9",
+        "source_lines": [
+          9,
+          11
+        ],
+        "source_node_id": "111669149700",
+        "target_node_id": "68719476742"
+      },
+      "id": "joern-reaching-def:111669149700:68719476742:amount",
+      "kind": "REACHING_DEF",
+      "resolution_state": "PROVIDER_REPORTED",
+      "source": {
+        "id": "111669149700",
+        "name": "amount"
+      },
+      "target": {
+        "id": "68719476742",
+        "name": "amount"
+      },
+      "variable": "amount"
+    },
+    {
+      "confidence": null,
+      "id": "call:proof.PriceFlow.total:proof.PriceFlow.addFee",
+      "kind": "CALLS",
+      "provider_evidence": [
+        {
+          "engine_edge": "CALL",
+          "line": 6,
+          "path": "src/main/java/proof/PriceFlow.java",
+          "provider": "joern",
+          "provider_version": "4.0.681+5-427508c9",
+          "source_node_id": "30064771074",
+          "target_node_id": "107374182401"
+        },
+        {
+          "engine_reference_id": "308cda543b4b7402ceab3642c5023a8de0d7ad3f3aa05ca590ad7a84a950b7ae",
+          "path": "src/main/java/proof/PriceFlow.java",
+          "provider": "atlas-engine",
+          "provider_version": "1.7.0",
+          "range": {
+            "end_byte": 165,
+            "end_column": 21,
+            "end_line": 5,
+            "start_byte": 159,
+            "start_column": 15,
+            "start_line": 5
+          },
+          "reason": "Atlas per-file extraction emitted the reference but did not run repository-level resolution.",
+          "resolution_state": "UNRESOLVED"
+        }
+      ],
+      "resolution_state": "RESOLVED",
+      "source": "method:proof.PriceFlow.total",
+      "target": "method:proof.PriceFlow.addFee"
+    }
+  ],
+  "schema": "codewiki-engine-proof/v1"
+}

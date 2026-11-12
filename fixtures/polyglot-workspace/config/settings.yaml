@@ -1,0 +1,3 @@
+service:
+  name: catalog-demo
+  timeout-seconds: 30
